@@ -1,7 +1,14 @@
 {
+  "name": "Loftschool_Shop",
+  "version": "0.0.1",
+  "description": "dz2",
+  "repository": "https://github.com/SilverDragoon/LoftSchool_Shop",
+  "author": "Artem Danshin",
   "devDependencies": {
     "bower": "^1.6.3",
     "browser-sync": "^2.9.11",
-    "gulp": "^3.9.0"
+    "compass": "^0.1.1",
+    "gulp": "^3.9.0",
+    "jade": "^1.11.0"
   }
 }
