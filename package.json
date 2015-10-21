@@ -7,8 +7,8 @@
   "devDependencies": {
     "bower": "^1.6.3",
     "browser-sync": "^2.9.11",
-    "compass": "^0.1.1",
     "gulp": "^3.9.0",
-    "jade": "^1.11.0"
+    "gulp-compass": "^2.1.0",
+    "gulp-jade": "^1.1.0",
   }
 }
