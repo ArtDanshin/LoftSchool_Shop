@@ -9,25 +9,25 @@ var gulp 		= require('gulp'),
 
 var paths = {
 		jade : {
-			location	: './app/markups/**/*.jade',
-			compiled	: './app/markups/_pages/*.jade',
-			destination	: '.'
+			location	: 'app/markups/**/*.jade',
+			compiled	: 'app/markups/_pages/*.jade',
+			destination	: 'app'
 		},
 
 		scss : {
-			location	: './app/scss/**/*scss',
-			entryPoint	: './app/css/main.css',
+			location	: 'app/scss/**/*scss',
+			entryPoint	: 'app/css/main.css',
 		},
 
 		compass : {
-			configFile	: './config.rb',
-			cssFolder	: './app/css',
-			scssFolder	: './app/scss',
-			imgFolder	: './img'
+			configFile	: 'config.rb',
+			cssFolder	: 'app/css',
+			scssFolder	: 'app/scss',
+			imgFolder	: 'img'
 		},
 
 		browserSync : {
-			baseDir		: './app/',
+			baseDir		: 'app',
 			watchPaths 	: ['app/*.html', 'app/css/*.css', 'app/js/*.js']
 		}
 }
@@ -39,7 +39,8 @@ gulp.task('jade', function() {
 		.pipe(jade({
 			pretty: '\t',
 		}))
-		.pipe(gulp.dest(paths.jade.destination));
+		.pipe(gulp.dest(paths.jade.destination))
+		.pipe(browserSync.stream());
 });
 
 /* ----- SCSS ----- */
@@ -63,6 +64,7 @@ gulp.task('sync', function() {
 			baseDir: paths.browserSync.baseDir
 		}
 	});
+
 });
 
 /* ----- Watch ----- */
