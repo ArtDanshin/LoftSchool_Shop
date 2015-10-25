@@ -1,11 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru-Ru">
 	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="vieport" content="device-width">
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
 		<title>Главная страница</title>
+		<!-- SEO-->
+		<meta name="description" content="LoftSchool Dz2 Artem Danshin">
+		<meta name="keywords" content="LoftSchool,dz2,artem,danshin">
+		<meta name="author" content="Artem Danshin">
+		<!-- bower CSS-->
+		<link rel="stylesheet" type="text/css" href="/bower/normalize-css/normalize.css">
+		<!-- CSS-->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<!-- modernizr-->
+		<script src="bower/modernizr/modernizr.js"></script>
 	</head>
 	<body>
-		<div class="text">I am hero!</div>
+		<div class="wrapper">
+			<div class="main-page">
+				<header class="upper-header">
+					<div class="content clearfix">
+						<div class="upper-header-left">
+							<ul class="social-head">
+								<li class="social-head__item social-head-tab"><a href="http://facebook.com" class="social-head-tab__link social-head-tab__link_fb">Facebook</a></li>
+								<li class="social-head__item social-head-tab"><a href="http://vk.com" class="social-head-tab__link social-head-tab__link_vk">В контакте</a></li>
+								<li class="social-head__item social-head-tab"><a href="http://twitter.com" class="social-head-tab__link social-head-tab__link_tw">Twitter</a></li>
+							</ul>
+						</div>
+						<div class="upper-header-right">
+							<div class="map-point"><a href="#" class="map-point__link">ул. Маяковская 6, офис 17</a></div>
+							<div class="phone-point"><a href="#" class="phone-point__link">+7 (921) 123-12-13</a></div>
+						</div>
+					</div>
+				</header>
+				<header class="low-header">
+					<div class="content">
+						<div class="logo"><img src="img/logo.png" alt="Логотип" class="logo__img"></div>
+						<div class="search-form">
+							<input type="text" placeholder="Что будем искать" class="search-form__input">
+							<input type="button" value="Поиск" class="search-form__button">
+						</div>
+						<ul class="menu-head">
+							<li class="menu-head__item menu-item"><a href="#" class="menu-item__link">Карта проезда</a></li>
+							<li class="menu-head__item menu-item"><a href="#" class="menu-item__link">История заказов</a></li>
+							<li class="menu-head__item menu-item"><a href="#" class="menu-item__link">Корзина</a></li>
+						</ul>
+					</div>
+				</header>
+				<nav class="navigation">
+					<div class="content">
+						<ul class="navigation-list">
+							<li class="navigation-list__item navigation-item"><a href="#" class="navigation-item__link">Планшеты</a></li>
+							<li class="navigation-list__item navigation-item"><a href="#" class="navigation-item__link">Мобильные телефоны</a></li>
+							<li class="navigation-list__item navigation-item"><a href="#" class="navigation-item__link">Mp3 плееры</a></li>
+							<li class="navigation-list__item navigation-item"><a href="#" class="navigation-item__link">Персональные компьютеры</a></li>
+							<li class="navigation-list__item navigation-list__item_current navigation-item"><a href="#" class="navigation-item__link">Ноутбуки</a></li>
+							<li class="navigation-list__item navigation-item"><a href="#" class="navigation-item__link">Аксессуары</a></li>
+							<li class="navigation-list__item navigation-item"><a href="#" class="navigation-item__link">Бытовая техника</a></li>
+						</ul>
+					</div>
+				</nav>
+				<div class="main-content">
+					<div class="content">
+						<div class="page-path"> <a href="#" class="page-path__link">Главная</a>&raquo;<a href="#" class="page-path_link">Каталог</a></div>
+						<div class="page-title">
+							<h1 class="page-title__h1">Мобильные телефоны</h1>
+						</div>
+						<div class="main-content-left">
+							<ul class="category-upper">
+								<li class="category-upper__item category-upper-item"><a href="#" class="category-upper-item__link">Флагманы</a></li>
+								<li class="category-upper__item category-upper-item"><a href="#" class="category-upper-item__link">Бюджетная линейка</a></li>
+							</ul>
+							<ul class="category-lower">
+								<li class="category-lower__item category-lower-item">
+									<div class="category-lower-item__head cat-item-head"><a href="#" class="cat-item-head__title">Наличие в магазинах</a></div>
+									<div class="category-lower__item category-lower-item"></div>
+								</li>
+								<li class="category-lower__item category-lower-item">
+									<div class="category-lower-item__head cat-item-head"><a href="#" class="cat-item-head__title">Бренды</a></div>
+									<div class="category-lower__item category-lower-item"></div>
+								</li>
+								<li class="category-lower__item category-lower-item">
+									<div class="category-lower-item__head cat-item-head"><a href="#" class="cat-item-head__title">Цена</a></div>
+									<div class="category-lower__item category-lower-item"></div>
+								</li>
+								<li class="category-lower__item category-lower-item">
+									<div class="category-lower-item__head cat-item-head"><a href="#" class="cat-item-head__title">Цвет</a></div>
+									<div class="category-lower__item category-lower-item"></div>
+								</li>
+								<li class="category-lower__item category-lower-item">
+									<div class="category-lower-item__head cat-item-head"><a href="#" class="cat-item-head__title">Операционные системы</a></div>
+									<div class="category-lower__item category-lower-item"></div>
+								</li>
+							</ul>
+						</div>
+						<div class="main-content-right">
+							<div class="head-main-content">
+								<div class="head-main-content__sort sort-block">
+									<div class="sort-block__text">Сортировать по</div>
+									<select class="sort-block__select sort-select">
+										<option class="sort-select__item">По цене</option>
+										<option class="sort-select__item">По популярности</option>
+									</select>
+								</div>
+								<div class="head-main-content__view view-block">
+									<div class="view-block__text"></div>
+									<ul class="view-block__points view-points">
+										<li class="view-points-item">Развернуто</li>
+										<li class="view-points-item">Таблицей</li>
+										<li class="view-points-item">Списком</li>
+									</ul>
+								</div>
+							</div>
+							<ul class="products"></ul>
+							<div class="wrap-pages">
+								<ul class="wrap-pages__pages pages">
+									<li class="page__item page-item"><a href="#" class="page-item__link">&laquo;</a></li>
+									<li class="page__item page-item"><a href="#" class="page-item__link">1</a></li>
+									<li class="page__item page-item"><a href="#" class="page-item__link">2</a></li>
+									<li class="page__item page-item"><a href="#" class="page-item__link">3</a></li>
+									<li class="page__item page-item"><a href="#" class="page-item__link">&raquo;</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="info-page">
+							<div class="info-page__title">Важная информация</div>
+							<div class="info-page__text">Бла бла бла бла Бла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла бла</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="page-footer">
+			<div class="content">
+				<div class="page-footer__left"><img src="img/logo-foot.png" alt="Логотип" class="logo-footer"></div>
+				<div class="page-footer__right">
+					<ul class="social-foot">
+						<li class="social-foot__item social-foot-tab"><a href="http://facebook.com" class="social-foot-tab__link social-foot-tab__link_fb">Facebook</a></li>
+						<li class="social-foot__item social-foot-tab"><a href="http://vk.com" class="social-foot-tab__link social-foot-tab__link_vk">В контакте</a></li>
+						<li class="social-foot__item social-foot-tab"><a href="http://twitter.com" class="social-foot-tab__link social-foot-tab__link_tw">Twitter</a></li>
+					</ul>
+					<ul class="navigation-list-foot">
+						<li class="navigation-list-foot__item navigation-item-foot"><a href="#" class="navigation-item-foot__link">Планшеты</a></li>
+						<li class="navigation-list-foot__item navigation-item-foot"><a href="#" class="navigation-item-foot__link">Мобильные телефоны</a></li>
+						<li class="navigation-list-foot__item navigation-item-foot"><a href="#" class="navigation-item-foot__link">Mp3 плееры</a></li>
+						<li class="navigation-list-foot__item navigation-item-foot"><a href="#" class="navigation-item-foot__link">Персональные компьютеры</a></li>
+						<li class="navigation-list-foot__item_current navigation-i-foottem"><a href="#" class="navigation-item-foot__link">Ноутбуки</a></li>
+						<li class="navigation-list-foot__item navigation-item-foot"><a href="#" class="navigation-item-foot__link">Аксессуары</a></li>
+						<li class="navigation-list-foot__item navigation-item-foot"><a href="#" class="navigation-item-foot__link">Бытовая техника</a></li>
+					</ul>
+				</div>
+				<div class="page-footer__lower">
+					<div class="copyright"></div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
