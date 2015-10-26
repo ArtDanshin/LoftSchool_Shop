@@ -216,16 +216,27 @@ body {
 .navigation-list__item {
 	list-style: none;
 	display: inline-block;
-	padding: 15px 14px;
+	padding: 15px 15px;
+	margin-left: -3px;
 }
-.navigation-list__item:last-child {
-	padding-right: 0px;
+.navigation-item_current {
+	background-color: #ff6600;
+}
+.navigation-list__item:hover {
+	background-color: #e4e2e2;
+} 
+.navigation-item_current:hover {
+	background-color: #ff6600;
 }
 .navigation-item__link {
 	font-family: OpenSans_regular;
 	font-size: 1.6em;
 	text-decoration: none;
 	color: #333333;
+}
+.navigation-item__link_current {
+	font-family: OpenSans_SemiBold;
+	color: #ffffff;
 }
 
 /* Основной блок */
