@@ -273,6 +273,7 @@ body {
 .main-content-left {
 	float: left;
 	width: 335px;
+	margin-bottom: 30px;
 }
 
 /* Блок категорий */
@@ -357,6 +358,7 @@ body {
 	width: 745px;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 30px;
 }
 .head-main-content {
 	height: 51px;
@@ -430,14 +432,26 @@ body {
 }
 
 /* Блок информации */
+
 .info-page {
 	clear: both;
+	margin-bottom: 30px;
+}
+.info-page__title {
+	font-family: OpenSans_Bold;
+	font-size: 2.0em;
+	color: #333333;
+	margin-bottom: 10px;
+}
+.info-page__text {
+	font-family: OpenSans_Regular;
+	font-size: 1.4em;
+	color: #333333
 }
 
 
 /* Прибиваем футер к низу */
 .wrapper {
-	position: relative;
 	min-height: 100%;
 	min-width: 1100px;
 	height: auto!important;
@@ -460,17 +474,19 @@ body {
 .page-footer__left {
 	float: left;
 	width: 240px;
+	margin-top: 70px;
 }
 .page-footer__right {
 	float: right;
-	width: 535px;
+	width: 590px;
 }
 
 /* Блок социальных иконок в подвале */
 
 .social-foot {
-	margin: 0;
+	margin: 35px 4px 20px 0;
 	padding: 0;
+	float: right;
 }
 .social-foot__item {
 	list-style: none;
@@ -508,6 +524,37 @@ body {
 	background: url(../img/Icon-foot-vk-circle-hover.png) no-repeat;
 }
 
+/* Нижняя навигация */
+
+.navigation-list-foot {
+	float: right;
+	width: 100%;
+	text-align: right;
+	margin-right: 4px; 
+}
+.navigation-list-foot__item {
+	list-style: none;
+	display: inline-block;
+	margin-left: 24px;
+	margin-bottom: 16px;
+}
+.navigation-item-foot__link {
+	font-family: OpenSans_Regular;
+	font-size: 1.4em;
+	color: #ffffff;
+}
+.page-footer__lower {
+	clear: both;
+	border-top: 1px #494949 solid; 
+	width: 100%;
+	text-align: center;
+	padding: 5px 0px;
+}
+.copyright {
+	font-family: OpenSans_Regular;
+	font-size: 1.2em;
+	color: #ffffff;
+}
 /* clearfix */
 .container:before, .clearfix:before,
 .container:after, .clearfix:after {
