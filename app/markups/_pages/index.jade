@@ -109,18 +109,21 @@ html(lang="ru-Ru")
 										a(href="#").filter-item-head__title Операционные системы
 									.filters-item__body.filter-body бла бла бла
 						.main-content-right
-							.head-main-content
+							.head-main-content.clearfix
 								.head-main-content__sort.sort-block
 									.sort-block__text Сортировать по
 									select.sort-block__select.sort-select
-										option.sort-select__item По цене
-										option.sort-select__item По популярности
+										option.sort-select__item по цене
+										option.sort-select__item по популярности
 								.head-main-content__view.view-block
-									.view-block__text
+									.view-block__text Вид каталога
 									ul.view-block__points.view-points
-										li.view-points-item Развернуто
-										li.view-points-item Таблицей
-										li.view-points-item Списком
+										li.view-points__item.view-points-item
+											a(href="#").view-points-item__link.view-points-item__link_all Развернуто
+										li.view-points__item 
+											a(href="#").view-points-item__link.view-points-item__link_tab Таблицей
+										li.view-points__item 
+											a(href="#").view-points-item__link.view-points-item__link_list Списком
 							ul.products
 								
 							.wrap-pages
