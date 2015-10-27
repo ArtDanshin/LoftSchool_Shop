@@ -431,6 +431,48 @@ body {
 	background: url(../img/left-ico-check-chk.png) no-repeat 0 0;
 }
 
+/* Операционные системы */
+
+
+.system-check {
+	height: 100%;
+	padding: 5px 30px 0 30px;
+}
+.system-check__item {
+	list-style: none;
+	margin-bottom: 17px;
+}
+.system-check-item__point {
+	display: none;
+	margin-bottom: 16px;
+}
+.system-check-item__text {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 29px;
+	padding-bottom: 1px; 
+	font-family: OpenSans_Regular;
+	font-size: 1.4em;
+}
+.system-check-item__text:before {
+	content: '';
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: url(../img/left-ico-check-un.png) no-repeat 0 0;
+}
+.system-check-item__text:hover:before {
+	background: url(../img/left-ico-check-hover.png) no-repeat 0 0;
+}
+.system-check-item__point:checked + .system-check-item__text:before {
+	background: url(../img/left-ico-check-chk.png) no-repeat 0 0;
+}
+
 /* Основной блок - Правая колонка */
 
 .main-content-right {
@@ -446,6 +488,7 @@ body {
 	background-color: #e4ebee;
 	border: 1px #dee1e4 solid; 
 	border-radius: 5px;
+	margin-bottom: 30px;
 }
 .sort-block {
 	float: left;
@@ -509,6 +552,36 @@ body {
 }
 .view-points-item__link_list {
 	background: url(../img/view3.png) no-repeat;
+}
+
+/* Информация о продукте */
+.products {
+	margin: 0;
+	padding: 0;
+}
+.products__item {
+	width: 235px;
+	list-style: none;
+	background-color: #fbfbfb;
+	border: 1px #dee1e4 solid;
+	border-radius: 5px;
+}
+.product__slide {
+	width: 135px;
+}
+.product-slide__img {
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	background-color: #ffffff;
+	border: 1px #dee1e4 solid;
+}
+.product-slide__img:first-child {
+	width: 135px;
+	height: 135px;
+}
+.product-slide-img__1 {
+
 }
 
 /* Блок информации */

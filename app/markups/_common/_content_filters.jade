@@ -30,7 +30,6 @@ ul.filters
 				li.brand-check__item
 					input(id="Motorola" type="checkbox" name="check" value="Motorola").brand-check-item__point
 					label(for="Motorola").brand-check-item__text Motorola
-
 	li.filters__item.filters-lower-item
 		.filters-item__head.filter-item-head
 			a(href="#").filter-item-head__title Цена
@@ -42,4 +41,20 @@ ul.filters
 	li.filters__item.filters-item
 		.filters-item__head.filter-item-head
 			a(href="#").filter-item-head__title Операционные системы
-		.filters-item__body.filter-body бла бла бла
+		.filters-item__body.filter-body 
+			ul.system-check
+				li.system-check__item
+					input(id="Android" type="checkbox" name="check" value="Android" checked).system-check-item__point
+					label(for="Android").system-check-item__text Android
+				li.system-check__item
+					input(id="iOS" type="checkbox" name="check" value="iOS" checked).system-check-item__point
+					label(for="iOS").system-check-item__text iOS
+				li.system-check__item
+					input(id="WindowsMobile" type="checkbox" name="check" value="WindowsMobile" checked).system-check-item__point
+					label(for="WindowsMobile").system-check-item__text Windows Mobile
+				li.system-check__item
+					input(id="Symbian" type="checkbox" name="check" value="Symbian").system-check-item__point
+					label(for="Symbian").system-check-item__text Symbian
+				li.system-check__item
+					input(id="Custom" type="checkbox" name="check" value="Custom").system-check-item__point
+					label(for="Custom").system-check-item__text Custom
