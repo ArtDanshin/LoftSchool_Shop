@@ -24,9 +24,9 @@
 					<div class="content clearfix">
 						<div class="upper-header-left">
 							<ul class="social-head">
-								<li class="social-head__item social-head-tab"><a href="http://facebook.com" class="social-head-tab__link social-head-tab__link_fb">Facebook</a></li>
-								<li class="social-head__item social-head-tab"><a href="http://vk.com" class="social-head-tab__link social-head-tab__link_vk">В контакте</a></li>
-								<li class="social-head__item social-head-tab"><a href="http://twitter.com" class="social-head-tab__link social-head-tab__link_tw">Twitter</a></li>
+								<li class="social-head__item"><a href="http://facebook.com" class="social-head__link social-head__link_fb">Facebook</a></li>
+								<li class="social-head__item"><a href="http://vk.com" class="social-head__link social-head__link_vk">В контакте</a></li>
+								<li class="social-head__item"><a href="http://twitter.com" class="social-head__link social-head__link_tw">Twitter</a></li>
 							</ul>
 						</div>
 						<div class="upper-header-right">
@@ -55,14 +55,14 @@
 				</header>
 				<nav class="navigation">
 					<div class="content">
-						<ul class="navigation-list">
-							<li class="navigation-list__item navigation-item"><a href="#" class="navigation-item__link">Планшеты</a></li>
-							<li class="navigation-list__item navigation-item navigation-item_current"><a href="#" class="navigation-item__link navigation-item__link_current">Мобильные телефоны</a></li>
-							<li class="navigation-list__item navigation-item"><a href="#" class="navigation-item__link">Mp3 плееры</a></li>
-							<li class="navigation-list__item navigation-item"><a href="#" class="navigation-item__link">Персональные компьютеры</a></li>
-							<li class="navigation-list__item navigation-list__item_current navigation-item"><a href="#" class="navigation-item__link">Ноутбуки</a></li>
-							<li class="navigation-list__item navigation-item"><a href="#" class="navigation-item__link">Аксессуары</a></li>
-							<li class="navigation-list__item navigation-item"><a href="#" class="navigation-item__link">Бытовая техника</a></li>
+						<ul class="navigation-head">
+							<li class="navigation-head__item"><a href="#" class="navigation-head__link">Планшеты</a></li>
+							<li class="navigation-head__item"><a href="#" class="navigation-head__link">Мобильные телефоны</a></li>
+							<li class="navigation-head__item navigation-head__item_current"><a href="#" class="navigation-head__link navigation-head__link_current">Mp3 плееры</a></li>
+							<li class="navigation-head__item"><a href="#" class="navigation-head__link">Персональные компьютеры</a></li>
+							<li class="navigation-head__item"><a href="#" class="navigation-head__link">Ноутбуки</a></li>
+							<li class="navigation-head__item"><a href="#" class="navigation-head__link">Аксессуары</a></li>
+							<li class="navigation-head__item"><a href="#" class="navigation-head__link">Бытовая техника</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -80,11 +80,45 @@
 							<ul class="filters">
 								<li class="filters__item filters-item">
 									<div class="filters-item__head filter-item-head"><a href="#" class="filter-item-head__title">Наличие в магазинах</a></div>
-									<div class="filters-item__body filter-body">бла бла бла</div>
+									<div class="filters-item__body filter-body"> 
+										<ul class="shop-radio">
+											<li class="shop-radio__item">
+												<input id="shopAll" type="radio" name="gender" checked class="shop-radio-item__point">
+												<label for="shopAll" class="shop-radio-item__text">Во всех магазинах</label>
+											</li>
+											<li class="shop-radio__item">
+												<input id="shopIn" type="radio" name="gender" class="shop-radio-item__point">
+												<label for="shopIn" class="shop-radio-item__text">В ближайшем магазине</label>
+											</li>
+										</ul>
+									</div>
 								</li>
 								<li class="filters__item filters-item">
 									<div class="filters-item__head filter-item-head"><a href="#" class="filter-item-head__title">Бренды</a></div>
-									<div class="filters-item__body filter-body">бла бла бла</div>
+									<div class="filters-item__body filter-body">
+										<ul class="brand-check">
+											<li class="brand-check__item">
+												<input id="lenovo" type="checkbox" name="check" value="lenovo" checked class="brand-check-item__point">
+												<label for="lenovo" class="brand-check-item__text">Lenovo</label>
+											</li>
+											<li class="brand-check__item">
+												<input id="Apple" type="checkbox" name="check" value="Apple" checked class="brand-check-item__point">
+												<label for="Apple" class="brand-check-item__text">Apple</label>
+											</li>
+											<li class="brand-check__item">
+												<input id="Samsung" type="checkbox" name="check" value="Samsung" checked class="brand-check-item__point">
+												<label for="Samsung" class="brand-check-item__text">Samsung</label>
+											</li>
+											<li class="brand-check__item">
+												<input id="Asus" type="checkbox" name="check" value="Asus" class="brand-check-item__point">
+												<label for="Asus" class="brand-check-item__text">Asus</label>
+											</li>
+											<li class="brand-check__item">
+												<input id="Motorola" type="checkbox" name="check" value="Motorola" class="brand-check-item__point">
+												<label for="Motorola" class="brand-check-item__text">Motorola</label>
+											</li>
+										</ul>
+									</div>
 								</li>
 								<li class="filters__item filters-lower-item">
 									<div class="filters-item__head filter-item-head"><a href="#" class="filter-item-head__title">Цена</a></div>
@@ -131,7 +165,7 @@
 						</div>
 						<div class="info-page">
 							<div class="info-page__title">Важная информация</div>
-							<div class="info-page__text">Бла бла бла бла Бла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла бла</div>
+							<div class="info-page__text">Бла бла бла бла Бла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла бла Бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бл</div>
 						</div>
 					</div>
 				</div>
@@ -142,18 +176,18 @@
 				<div class="page-footer__left"><img src="img/logo-foot.png" alt="Логотип" class="logo-footer"></div>
 				<div class="page-footer__right">
 					<ul class="social-foot">
-						<li class="social-foot__item social-foot-tab"><a href="http://facebook.com" class="social-foot-tab__link social-foot-tab__link_fb">Facebook</a></li>
-						<li class="social-foot__item social-foot-tab"><a href="http://vk.com" class="social-foot-tab__link social-foot-tab__link_vk">В контакте</a></li>
-						<li class="social-foot__item social-foot-tab"><a href="http://twitter.com" class="social-foot-tab__link social-foot-tab__link_tw">Twitter</a></li>
+						<li class="social-foot__item"><a href="http://facebook.com" class="social-foot__link social-foot__link_fb">Facebook</a></li>
+						<li class="social-foot__item"><a href="http://vk.com" class="social-foot__link social-foot__link_vk">В контакте</a></li>
+						<li class="social-foot__item"><a href="http://twitter.com" class="social-foot__link social-foot__link_tw">Twitter</a></li>
 					</ul>
-					<ul class="navigation-list-foot">
-						<li class="navigation-list-foot__item navigation-item-foot"><a href="#" class="navigation-item-foot__link">Планшеты</a></li>
-						<li class="navigation-list-foot__item navigation-item-foot"><a href="#" class="navigation-item-foot__link">Мобильные телефоны</a></li>
-						<li class="navigation-list-foot__item navigation-item-foot"><a href="#" class="navigation-item-foot__link">Mp3 плееры</a></li>
-						<li class="navigation-list-foot__item navigation-item-foot"><a href="#" class="navigation-item-foot__link">Персональные компьютеры</a></li>
-						<li class="navigation-list-foot__item navigation-item-foot"><a href="#" class="navigation-item-foot__link">Ноутбуки</a></li>
-						<li class="navigation-list-foot__item navigation-item-foot"><a href="#" class="navigation-item-foot__link">Аксессуары</a></li>
-						<li class="navigation-list-foot__item navigation-item-foot"><a href="#" class="navigation-item-foot__link">Бытовая техника</a></li>
+					<ul class="navigation-foot">
+						<li class="navigation-foot__item"><a href="#" class="navigation-foot__link">Планшеты</a></li>
+						<li class="navigation-foot__item"><a href="#" class="navigation-foot__link">Мобильные телефоны</a></li>
+						<li class="navigation-foot__item navigation-foot__item_current"><a href="#" class="navigation-foot__link navigation-foot__link_current">Mp3 плееры</a></li>
+						<li class="navigation-foot__item"><a href="#" class="navigation-foot__link">Персональные компьютеры</a></li>
+						<li class="navigation-foot__item"><a href="#" class="navigation-foot__link">Ноутбуки</a></li>
+						<li class="navigation-foot__item"><a href="#" class="navigation-foot__link">Аксессуары</a></li>
+						<li class="navigation-foot__item"><a href="#" class="navigation-foot__link">Бытовая техника</a></li>
 					</ul>
 				</div>
 			</div>

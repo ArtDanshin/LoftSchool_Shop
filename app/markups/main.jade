@@ -1,0 +1,42 @@
+include _common/_navigation_mixin.jade
+include _common/_socials_mixin.jade
+
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="vieport" content="device-width")
+		title
+			block title
+		// SEO
+		meta(name="description" content="LoftSchool Dz2 Artem Danshin")
+		meta(name="keywords" content="LoftSchool,dz2,artem,danshin")
+		meta(name="author" content="Artem Danshin")
+		// bower CSS
+		link(rel="stylesheet" type="text/css" href="/bower/normalize-css/normalize.css")
+		// CSS
+		link(rel="stylesheet" type="text/css" href="/fonts/opensans.css")
+		link(rel="stylesheet" type="text/css" href="/css/main.css")
+		// modernizr
+		script(src="bower/modernizr/modernizr.js")
+	body
+		.wrapper
+			.main-page
+				include _common/_header_upper.jade
+				include _common/_header_lower.jade
+				nav.navigation
+					.content
+						+nav('head', ['Планшеты', 'Мобильные телефоны', 'Mp3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника'], 2)
+				.main-content
+					.content
+						block content
+		footer.page-footer
+			.content
+				.page-footer__left
+					img(src="img/logo-foot.png" alt="Логотип").logo-footer
+				.page-footer__right
+					+socials('foot',['fb', 'vk', 'tw'],['Facebook', 'В контакте', 'Twitter'],['http://facebook.com','http://vk.com','http://twitter.com'])
+					+nav('foot', ['Планшеты', 'Мобильные телефоны', 'Mp3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника'], 2)
+			.page-footer__lower
+				span.copyright All right reserved. 2015. no copy alowed

@@ -39,28 +39,28 @@ body {
 .social-head__item:first-child {
 	margin-left: 0;
 }
-.social-head-tab__link {
+.social-head__link {
 	display: block;
 	height: 100%;
 	width: 100%;
 	text-indent: -9999px;
 }
-.social-head-tab__link.social-head-tab__link_fb {
+.social-head__link.social-head__link_fb {
 	background: url(../img/Icon-Facebook-circle.png) no-repeat;
 }
-.social-head-tab__link.social-head-tab__link_fb:hover {
+.social-head__link.social-head__link_fb:hover {
 	background: url(../img/Icon-Facebook-circle-hover.png) no-repeat;
 }
-.social-head-tab__link.social-head-tab__link_tw {
+.social-head__link.social-head__link_tw {
 	background: url(../img/Icon-tw-circle.png) no-repeat;
 }
-.social-head-tab__link.social-head-tab__link_tw:hover {
+.social-head__link.social-head__link_tw:hover {
 	background: url(../img/Icon-tw-circle-hover.png) no-repeat;
 }
-.social-head-tab__link.social-head-tab__link_vk {
+.social-head__link.social-head__link_vk {
 	background: url(../img/Icon-vk-circle.png) no-repeat;
 }
-.social-head-tab__link.social-head-tab__link_vk:hover {
+.social-head__link.social-head__link_vk:hover {
 	background: url(../img/Icon-vk-circle-hover.png) no-repeat;
 }
 
@@ -207,27 +207,27 @@ body {
 	border-bottom: 2px #ebedef solid;
 	margin-bottom: 28px;
 }
-.navigation-list {
+.navigation-head {
 	margin: 0;
 	padding: 0;
 	height: 52px;
 	margin-left: 8px;
 }
-.navigation-list__item {
+.navigation-head__item {
 	list-style: none;
 	display: inline-block;
 	margin-left: -3px;
 }
-.navigation-item_current {
+.navigation-head__item_current {
 	background-color: #ff6600;
 }
-.navigation-list__item:hover {
+.navigation-head__item:hover {
 	background-color: #e4e2e2;
 } 
-.navigation-item_current:hover {
+.navigation-head__item_current:hover {
 	background-color: #ff6600;
 }
-.navigation-item__link {
+.navigation-head__link {
 	font-family: OpenSans_regular;
 	font-size: 1.6em;
 	text-decoration: none;
@@ -235,7 +235,7 @@ body {
 	display: block;
 	padding: 15px 15px;
 }
-.navigation-item__link_current {
+.navigation-head__link_current {
 	font-family: OpenSans_SemiBold;
 	color: #ffffff;
 }
@@ -285,7 +285,7 @@ body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 20px;
+	margin-bottom: 37px;
 }
 .category-upper__item {
 	list-style: none;
@@ -341,14 +341,94 @@ body {
 }
 .filter-item-head__title {
 	display: block;
-	font-family: OpenSans_Semibold;
+	font-family: OpenSans_Bold;
 	font-size: 1.4em;
 	color: #333333;
 	text-decoration: none;
 	padding: 12px 30px 14px;
 }
 .filters-item__body {
+	display: block;
+}
+/* Наличие в магазинах*/
+
+.shop-radio-item__point {
 	display: none;
+}
+.shop-radio {
+	height: 100%;
+	padding: 5px 30px 0 30px;
+}
+.shop-radio__item {
+	list-style: none;
+	margin-bottom: 16px;
+}
+.shop-radio-item__text {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 29px;
+	padding-bottom: 1px; 
+	font-family: OpenSans_Regular;
+	font-size: 1.4em;
+}
+.shop-radio-item__text:before {
+	content: '';
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: url(../img/left-ico-radio-un.png) no-repeat 0 0;
+}
+.shop-radio-item__text:hover:before {
+	background: url(../img/left-ico-radio-hover.png) no-repeat 0 0;
+}
+.shop-radio-item__point:checked + .shop-radio-item__text:before {
+	background: url(../img/left-ico-radio-chk.png) no-repeat 0 0;
+}
+
+/* Бренды */
+
+.brand-check {
+	height: 100%;
+	padding: 5px 30px 0 30px;
+}
+.brand-check__item {
+	list-style: none;
+	margin-bottom: 17px;
+}
+.brand-check-item__point {
+	display: none;
+	margin-bottom: 16px;
+}
+.brand-check-item__text {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 29px;
+	padding-bottom: 1px; 
+	font-family: OpenSans_Regular;
+	font-size: 1.4em;
+}
+.brand-check-item__text:before {
+	content: '';
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: url(../img/left-ico-check-un.png) no-repeat 0 0;
+}
+.brand-check-item__text:hover:before {
+	background: url(../img/left-ico-check-hover.png) no-repeat 0 0;
+}
+.brand-check-item__point:checked + .brand-check-item__text:before {
+	background: url(../img/left-ico-check-chk.png) no-repeat 0 0;
 }
 
 /* Основной блок - Правая колонка */
@@ -498,47 +578,47 @@ body {
 .social-foot__item:first-child {
 	margin-left: 0;
 }
-.social-foot-tab__link {
+.social-foot__link {
 	display: block;
 	height: 100%;
 	width: 100%;
 	text-indent: -9999px;
 
 }
-.social-foot-tab__link.social-foot-tab__link_fb {
+.social-foot__link.social-foot__link_fb {
 	background: url(../img/Icon-foot-fb-circle.png) no-repeat;
 }
-.social-foot-tab__link.social-foot-tab__link_fb:hover {
+.social-foot__link.social-foot__link_fb:hover {
 	background: url(../img/Icon-foot-fb-circle-hover.png) no-repeat;
 }
-.social-foot-tab__link.social-foot-tab__link_tw {
+.social-foot__link.social-foot__link_tw {
 	background: url(../img/Icon-foot-tw-circle.png) no-repeat;
 }
-.social-foot-tab__link.social-foot-tab__link_tw:hover {
+.social-foot__link.social-foot__link_tw:hover {
 	background: url(../img/Icon-foot-tw-circle-hover.png) no-repeat;
 }
-.social-foot-tab__link.social-foot-tab__link_vk {
+.social-foot__link.social-foot__link_vk {
 	background: url(../img/Icon-foot-vk-circle.png) no-repeat;
 }
-.social-foot-tab__link.social-foot-tab__link_vk:hover {
+.social-foot__link.social-foot__link_vk:hover {
 	background: url(../img/Icon-foot-vk-circle-hover.png) no-repeat;
 }
 
 /* Нижняя навигация */
 
-.navigation-list-foot {
+.navigation-foot {
 	float: right;
 	width: 100%;
 	text-align: right;
 	margin-right: 4px; 
 }
-.navigation-list-foot__item {
+.navigation-foot__item {
 	list-style: none;
 	display: inline-block;
 	margin-left: 24px;
 	margin-bottom: 16px;
 }
-.navigation-item-foot__link {
+.navigation-foot__link {
 	font-family: OpenSans_Regular;
 	font-size: 1.4em;
 	color: #ffffff;

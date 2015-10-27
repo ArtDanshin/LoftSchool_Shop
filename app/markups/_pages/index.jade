@@ -1,172 +1,48 @@
-doctype html
+extends ../main
 
-html(lang="ru-Ru")
-	head
-		meta(charset="UTF-8")
-		meta(http-equiv="X-UA-Compatible" content="IE=edge")
-		meta(name="vieport" content="device-width")
-		title
-			| Главная страница
-		// SEO
-		meta(name="description" content="LoftSchool Dz2 Artem Danshin")
-		meta(name="keywords" content="LoftSchool,dz2,artem,danshin")
-		meta(name="author" content="Artem Danshin")
-		// bower CSS
-		link(rel="stylesheet" type="text/css" href="/bower/normalize-css/normalize.css")
-		// CSS
-		link(rel="stylesheet" type="text/css" href="/fonts/opensans.css")
-		link(rel="stylesheet" type="text/css" href="/css/main.css")
-		// modernizr
-		script(src="bower/modernizr/modernizr.js")
-	body
-		.wrapper
-			.main-page
-				header.upper-header
-					.content.clearfix
-						.upper-header-left
-							ul.social-head
-								li.social-head__item.social-head-tab
-									a(href="http://facebook.com").social-head-tab__link.social-head-tab__link_fb Facebook
-								li.social-head__item.social-head-tab
-									a(href="http://vk.com").social-head-tab__link.social-head-tab__link_vk В контакте
-								li.social-head__item.social-head-tab
-									a(href="http://twitter.com").social-head-tab__link.social-head-tab__link_tw Twitter
-						.upper-header-right
-							.map-point
-								a(href="#").map-point__link ул. Маяковская 6, офис 17
-							.phone-point
-								a(href="#").phone-point__link +7 (921) 123-12-13
-				header.low-header
-					.content
-						.low-header-left
-							.logo
-								img(src="img/logo.png" alt="Логотип").logo__img
-						.low-header-right
-							.search-form
-								input(type="text" placeholder="Что будем искать").search-form__input
-								input(type="button" value="Найти").search-form__button
-							ul.menu-head
-								li.menu-head__item.menu-item
-									a(href="#").menu-item__link Карта проезда
-								li.menu-head__item.menu-item
-									a(href="#").menu-item__link История заказов
-								li.menu-head__item.menu-item
-									a(href="#").menu-item__link Корзина
-				nav.navigation
-					.content
-						ul.navigation-list
-							li.navigation-list__item.navigation-item
-								a(href="#").navigation-item__link Планшеты
-							li.navigation-list__item.navigation-item.navigation-item_current
-								a(href="#").navigation-item__link.navigation-item__link_current Мобильные телефоны
-							li.navigation-list__item.navigation-item
-								a(href="#").navigation-item__link Mp3 плееры
-							li.navigation-list__item.navigation-item
-								a(href="#").navigation-item__link Персональные компьютеры
-							li.navigation-list__item.navigation-list__item_current.navigation-item
-								a(href="#").navigation-item__link Ноутбуки
-							li.navigation-list__item.navigation-item
-								a(href="#").navigation-item__link Аксессуары
-							li.navigation-list__item.navigation-item
-								a(href="#").navigation-item__link Бытовая техника
-				.main-content
-					.content
-						.page-path 
-							a(href="#").page-path__link Главная
-							&raquo;
-							a(href="#").page-path__link Каталог
-						.page-title
-							h1.page-title__h1 Мобильные телефоны
-						.main-content-left
-							ul.category-upper
-								li.category-upper__item.category-upper-item
-									a(href="#").category-upper-item__link Флагманы
-								li.category-upper__item.category-upper-item.category-upper-item_current
-									a(href="#").category-upper-item__link.category-upper-item__link_current Бюджетная линейка
-							ul.filters
-								li.filters__item.filters-item
-									.filters-item__head.filter-item-head
-										a(href="#").filter-item-head__title Наличие в магазинах
-									.filters-item__body.filter-body бла бла бла
+block title
+	| Главная страница
 
-								li.filters__item.filters-item
-									.filters-item__head.filter-item-head
-										a(href="#").filter-item-head__title Бренды
-									.filters-item__body.filter-body бла бла бла
-										
-								li.filters__item.filters-lower-item
-									.filters-item__head.filter-item-head
-										a(href="#").filter-item-head__title Цена
-									.filters-item__body.filter-body бла бла бла
-										
-								li.filters__item.filters-item
-									.filters-item__head.filter-item-head
-										a(href="#").filter-item-head__title Цвет
-									.filters-item__body.filter-body бла бла бла
-
-								li.filters__item.filters-item
-									.filters-item__head.filter-item-head
-										a(href="#").filter-item-head__title Операционные системы
-									.filters-item__body.filter-body бла бла бла
-						.main-content-right
-							.head-main-content.clearfix
-								.head-main-content__sort.sort-block
-									.sort-block__text Сортировать по
-									select.sort-block__select.sort-select
-										option.sort-select__item по цене
-										option.sort-select__item по популярности
-								.head-main-content__view.view-block
-									.view-block__text Вид каталога
-									ul.view-block__points.view-points
-										li.view-points__item.view-points-item
-											a(href="#").view-points-item__link.view-points-item__link_all Развернуто
-										li.view-points__item 
-											a(href="#").view-points-item__link.view-points-item__link_tab Таблицей
-										li.view-points__item 
-											a(href="#").view-points-item__link.view-points-item__link_list Списком
-							ul.products
-								
-							.wrap-pages
-								ul.wrap-pages__pages.pages
-									li.page__item.page-item
-										a(href="#").page-item__link &laquo;
-									li.page__item.page-item
-										a(href="#").page-item__link 1
-									li.page__item.page-item
-										a(href="#").page-item__link 2
-									li.page__item.page-item
-										a(href="#").page-item__link 3
-									li.page__item.page-item
-										a(href="#").page-item__link &raquo;
-						.info-page
-							.info-page__title Важная информация
-							.info-page__text Бла бла бла бла Бла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла бла
-		footer.page-footer
-			.content
-				.page-footer__left
-					img(src="img/logo-foot.png" alt="Логотип").logo-footer
-				.page-footer__right
-					ul.social-foot
-								li.social-foot__item.social-foot-tab
-									a(href="http://facebook.com").social-foot-tab__link.social-foot-tab__link_fb Facebook
-								li.social-foot__item.social-foot-tab
-									a(href="http://vk.com").social-foot-tab__link.social-foot-tab__link_vk В контакте
-								li.social-foot__item.social-foot-tab
-									a(href="http://twitter.com").social-foot-tab__link.social-foot-tab__link_tw Twitter
-					ul.navigation-list-foot
-							li.navigation-list-foot__item.navigation-item-foot
-								a(href="#").navigation-item-foot__link Планшеты
-							li.navigation-list-foot__item.navigation-item-foot
-								a(href="#").navigation-item-foot__link Мобильные телефоны
-							li.navigation-list-foot__item.navigation-item-foot
-								a(href="#").navigation-item-foot__link Mp3 плееры
-							li.navigation-list-foot__item.navigation-item-foot
-								a(href="#").navigation-item-foot__link Персональные компьютеры
-							li.navigation-list-foot__item.navigation-item-foot
-								a(href="#").navigation-item-foot__link Ноутбуки
-							li.navigation-list-foot__item.navigation-item-foot
-								a(href="#").navigation-item-foot__link Аксессуары
-							li.navigation-list-foot__item.navigation-item-foot
-								a(href="#").navigation-item-foot__link Бытовая техника
-			.page-footer__lower
-				span.copyright All right reserved. 2015. no copy alowed
+block content			
+	.page-path 
+		a(href="#").page-path__link Главная
+		&raquo;
+		a(href="#").page-path__link Каталог
+	.page-title
+		h1.page-title__h1 Мобильные телефоны
+	.main-content-left
+		include ../_common/_content_category.jade
+		include ../_common/_content_filters.jade
+	.main-content-right
+		.head-main-content.clearfix
+			.head-main-content__sort.sort-block
+				.sort-block__text Сортировать по
+				select.sort-block__select.sort-select
+					option.sort-select__item по цене
+					option.sort-select__item по популярности
+			.head-main-content__view.view-block
+				.view-block__text Вид каталога
+				ul.view-block__points.view-points
+					li.view-points__item.view-points-item
+						a(href="#").view-points-item__link.view-points-item__link_all Развернуто
+					li.view-points__item 
+						a(href="#").view-points-item__link.view-points-item__link_tab Таблицей
+					li.view-points__item 
+						a(href="#").view-points-item__link.view-points-item__link_list Списком
+		
+		include ../_common/_content_items.jade	
+		.wrap-pages
+			ul.wrap-pages__pages.pages
+				li.page__item.page-item
+					a(href="#").page-item__link &laquo;
+				li.page__item.page-item
+					a(href="#").page-item__link 1
+				li.page__item.page-item
+					a(href="#").page-item__link 2
+				li.page__item.page-item
+					a(href="#").page-item__link 3
+				li.page__item.page-item
+					a(href="#").page-item__link &raquo;
+	.info-page
+		.info-page__title Важная информация
+		.info-page__text Бла бла бла бла Бла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла бла Бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бла блаБла бла бл
