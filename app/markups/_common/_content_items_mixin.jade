@@ -5,7 +5,7 @@ mixin shop-item(classItem,imgItem, articleItem, titleItems, textItem, typeSim, q
 				ul(class=classItem+ '__slide')
 					- for (var j = 1; j < 5; j++)
 						li(class=classItem + "-slide__img")
-							img(src="img/item/" + imgItem[i] + "-" + j + ".png" alt="Image " + titleItem + " " + j class=classItem + "-slide-img " + classItem + "-slide-img_current")
+							img(src="img/item/" + imgItem[i] + "-" + j + ".png" alt="Image " + titleItem + " " + j class=classItem + "-slide-img" + ((j == 1) ? " " + classItem + "-slide-img_current" : ""))
 				div(class=classItem + "__article")= "Артикул " +  articleItem[i]
 				h2(class=classItem + "__title")= titleItem
 				p(class=classItem + "__text")= textItem[i]
@@ -39,6 +39,6 @@ mixin shop-item(classItem,imgItem, articleItem, titleItems, textItem, typeSim, q
 							li(class=classItem + "-rating__stars_white") -
 					div(class=classItem + "-rating__number")= ratingItem[i]
 				div(class=classItem + "__wrap-price-shop")
-					div(class=classItem + "__price")= priceItem
+					div(class=classItem + "__price")= priceItem[i]
 					div(class=classItem + "__presence") В наличие
 					input(type="button" value="В корзину" class=classItem + "__shop-button")
