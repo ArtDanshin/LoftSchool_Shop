@@ -23,7 +23,7 @@ var paths = {
 			configFile	: 'config.rb',
 			cssFolder	: 'app/css',
 			scssFolder	: 'app/scss',
-			imgFolder	: 'img'
+			imgFolder	: 'app/img'
 		},
 
 		browserSync : {
