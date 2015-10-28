@@ -1,3 +1,14 @@
+@mixin get-sprite ($map, $icon) {
+	$sprite-image: sprite-file($map, $icon);
+	$sprite-map: sprite-url($map);
+	$sprite-position: sprite-position($map, $icon);
+
+	background: $sprite-map $sprite-position no-repeat;
+
+	height: image-height($sprite-image);
+	width: image-width($sprite-image);
+}
+
 /* Верхний баннер */
 .upper-header {
 	background-color: #FFFFFF;
@@ -10,45 +21,41 @@
 	float: left;
 	width: 120px;
 	height: 77px;
-}
-.social-head {
-	margin: 0;
-	padding: 0;
-	margin: 26px 0;
-}
-.social-head__item {
-	list-style: none;
-	display: inline-block;
-	width: 26px;
-	height: 26px;
-	margin-left: 14px;
-}
-.social-head__item:first-child {
-	margin-left: 0;
-}
-.social-head__link {
-	display: block;
-	height: 100%;
-	width: 100%;
-	text-indent: -9999px;
-}
-.social-head__link.social-head__link_fb {
-	background: url(../img/Icon-Facebook-circle.png) no-repeat;
-}
-.social-head__link.social-head__link_fb:hover {
-	background: url(../img/Icon-Facebook-circle-hover.png) no-repeat;
-}
-.social-head__link.social-head__link_tw {
-	background: url(../img/Icon-tw-circle.png) no-repeat;
-}
-.social-head__link.social-head__link_tw:hover {
-	background: url(../img/Icon-tw-circle-hover.png) no-repeat;
-}
-.social-head__link.social-head__link_vk {
-	background: url(../img/Icon-vk-circle.png) no-repeat;
-}
-.social-head__link.social-head__link_vk:hover {
-	background: url(../img/Icon-vk-circle-hover.png) no-repeat;
+
+	.social-head {
+		margin: 0;
+		padding: 0;
+		margin: 26px 0;
+	}
+	.social-head__item {
+		list-style: none;
+		display: inline-block;
+		width: 26px;
+		height: 26px;
+		margin-left: 14px;
+	}
+	.social-head__item:first-child {
+		margin-left: 0;
+	}
+	.social-head__link {
+		display: block;
+		height: 100%;
+		width: 100%;
+		text-indent: -9999px;
+	}
+
+	$socials-map: sprite-map('socials/*.png', $spacing: 70px);
+	
+	$socials: fb, vk, tw;
+
+	@each $social in $socials {
+		.social-head__link_#{$social} {
+			@include get-sprite($socials-map, #{$social});
+		}
+		.social-head__link_#{$social}:hover {
+			@include get-sprite($socials-map, #{$social}-hover);
+		}
+	}
 }
 
 /* Правый блок Верхнего баннера */
@@ -66,6 +73,13 @@
 	top: 50%;
 	bottom: 50%;
 	margin-top: -12px;
+
+	.map-point__link {
+		font-family: OpenSans_SemiBold;
+		font-size: 1.4em;
+		text-decoration: none;
+		color: #333333;
+	}
 }
 .map-point:after {
 	content: '';
@@ -76,12 +90,6 @@
 	top: 3px;
 	left: -20px;
 }
-.map-point__link {
-	font-family: OpenSans_SemiBold;
-	font-size: 1.4em;
-	text-decoration: none;
-	color: #333333;
-}
 .phone-point {
 	float: right;
 	position: relative;
@@ -89,12 +97,13 @@
 	top: 50%;
 	bottom: 50%;
 	margin-top: -14px;
-}
-.phone-point__link {
-	font-family: OpenSans_Bold;
-	font-size: 1.8em;
-	text-decoration: none;
-	color: #333333;
+
+	.phone-point__link {
+		font-family: OpenSans_Bold;
+		font-size: 1.8em;
+		text-decoration: none;
+		color: #333333;
+	}
 }
 .phone-point:after {
 	content: '';

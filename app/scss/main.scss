@@ -4,9 +4,15 @@
 
 @import "_misc/normalize";
 
+/* --------- Sprites --------- */
+
+$check-map: sprite-map('check/*.png', $spacing: 70px, $layout: horizontal);
+$otherIcon-map: sprite-map('other/*.png', $spacing: 70px, $layout: horizontal);
+
 /* --------- mixins --------- */
 
 @import "_misc/mixins";
+
 
 /* --------- adjustment --------- */
 
@@ -14,6 +20,7 @@
 
 /* --------- sections --------- */
 
+@import "section/footer.scss";
 @import "section/header_upper.scss";
 @import "section/header_lower.scss";
 @import "section/navigation_upper.scss";
@@ -23,4 +30,3 @@
 @import "section/main_sort-view.scss";
 @import "section/main_items.scss";
 @import "section/main_info.scss";
-@import "section/footer.scss"

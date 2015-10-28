@@ -13,26 +13,21 @@
   height: 52px;
   margin-left: 8px;
 }
-
-.navigation-head__item {
+.navigation-head .navigation-head__item {
   list-style: none;
   display: inline-block;
   margin-left: -3px;
 }
-
-.navigation-head__item_current {
+.navigation-head .navigation-head__item_current {
   background-color: #ff6600;
 }
-
-.navigation-head__item:hover {
+.navigation-head .navigation-head__item:hover {
   background-color: #e4e2e2;
 }
-
-.navigation-head__item_current:hover {
+.navigation-head .navigation-head__item_current:hover {
   background-color: #ff6600;
 }
-
-.navigation-head__link {
+.navigation-head .navigation-head__link {
   font-family: OpenSans_regular;
   font-size: 1.6em;
   text-decoration: none;
@@ -40,8 +35,7 @@
   display: block;
   padding: 15px 15px;
 }
-
-.navigation-head__link_current {
+.navigation-head .navigation-head__link_current {
   font-family: OpenSans_SemiBold;
   color: #ffffff;
 }
