@@ -1,3 +1,14 @@
+@mixin get-sprite ($map, $icon) {
+	$sprite-image: sprite-file($map, $icon);
+	$sprite-map: sprite-url($map);
+	$sprite-position: sprite-position($map, $icon);
+
+	background: $sprite-map $sprite-position no-repeat;
+
+	height: image-height($sprite-image);
+	width: image-width($sprite-image);
+}
+
 /* Блок сортировки и режима просмотра контента */
 
 .head-main-content {
@@ -58,19 +69,26 @@
 		padding: 20px 16px 16px;
 		border-left: 1px #dee1e4 solid; 
 	}
-	.view-points-item__link {
+	.view-points__link {
 		display: block;
 		height: 100%;
 		width: 100%;
 		text-indent: -9999px;
 	}
-	.view-points-item__link_all {
-		background: url(../img/view1.png) no-repeat;
-	}
-	.view-points-item__link_tab {
-		background: url(../img/view2.png) no-repeat;
-	}
-	.view-points-item__link_list {
-		background: url(../img/view3.png) no-repeat;
+
+	$otherIcon-map: sprite-map('other/*.png', $spacing: 70px, $layout: horizontal);
+
+	$views: all, tab, list;
+
+	@each $view in $views {
+		.view-points__link_#{$view} {
+			@include get-sprite($otherIcon-map, view-#{$view});
+		}
+		.view-points__link_#{$view}-current {
+			@include get-sprite($otherIcon-map, view-#{$view}-current);
+		}
+		.view-points__link_#{$view}:hover {
+			@include get-sprite($otherIcon-map, view-#{$view}-current);
+		}
 	}
 }

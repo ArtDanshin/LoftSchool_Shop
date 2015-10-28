@@ -9,24 +9,20 @@
   padding: 0;
   margin-bottom: 37px;
 }
-
-.category-upper__item {
+.category-upper .category-upper__item {
   list-style: none;
   width: 100%;
   background-color: #fbfbfb;
   border-top: 1px #dee1e4 solid;
 }
-
-.category-upper__item:first-child {
+.category-upper .category-upper__item:first-child {
   border-top: 0;
   border-radius: 4px 4px 0 0;
 }
-
-.category-upper__item:last-child {
+.category-upper .category-upper__item:last-child {
   border-radius: 0 0 4px 4px;
 }
-
-.category-upper-item__link {
+.category-upper .category-upper__link {
   display: block;
   font-family: OpenSans_Regular;
   font-size: 1.4em;
@@ -34,8 +30,7 @@
   text-decoration: none;
   padding: 12px 30px 14px;
 }
-
-.category-upper-item_current {
+.category-upper .category-upper__item_current {
   background-color: #d9e5ea;
 }
 
@@ -48,29 +43,24 @@
   margin: 0;
   padding: 0;
 }
-
-.filters__item {
+.filters .filters__item {
   list-style: none;
   width: 100%;
   background-color: #fbfbfb;
   border: 0;
   border-top: 1px #dee1e4 solid;
 }
-
-.filters__item:first-child {
+.filters .filters__item:first-child {
   border-top: 0;
   border-radius: 4px 4px 0 0;
 }
-
-.filters__item:last-child {
+.filters .filters__item:last-child {
   border-radius: 0 0 4px 4px;
 }
-
-.filters-item__head:hover {
+.filters .filters-item__head:hover {
   background-color: #d9e5ea;
 }
-
-.filter-item-head__title {
+.filters .filter-item-head__title {
   display: block;
   font-family: OpenSans_Bold;
   font-size: 1.4em;
@@ -78,27 +68,23 @@
   text-decoration: none;
   padding: 12px 30px 14px;
 }
-
-.filters-item__body {
+.filters .filters-item__body {
   display: block;
 }
 
-/* ╨Э╨░╨╗╨╕╤З╨╕╨╡ ╨▓ ╨╝╨░╨│╨░╨╖╨╕╨╜╨░╤Е*/
-.shop-radio-item__point {
-  display: none;
-}
-
-.shop-radio {
+/* Radio Check */
+.filter-radio {
   height: 100%;
   padding: 5px 30px 0 30px;
 }
-
-.shop-radio__item {
+.filter-radio .filter-radio__item {
   list-style: none;
   margin-bottom: 16px;
 }
-
-.shop-radio-item__text {
+.filter-radio .filter-radio__point {
+  display: none;
+}
+.filter-radio .filter-radio__text {
   display: block;
   cursor: pointer;
   position: relative;
@@ -107,8 +93,7 @@
   font-family: OpenSans_Regular;
   font-size: 1.4em;
 }
-
-.shop-radio-item__text:before {
+.filter-radio .filter-radio__text:before {
   content: '';
   display: inline-block;
   width: 19px;
@@ -117,34 +102,35 @@
   position: absolute;
   left: 0;
   bottom: 1px;
-  background: url(../img/left-ico-radio-un.png) no-repeat 0 0;
+  background: url('../../img/check-se87e9f6d34.png') -445px 0 no-repeat;
+  height: 19px;
+  width: 19px;
+}
+.filter-radio .filter-radio__text:hover:before {
+  background: url('../../img/check-se87e9f6d34.png') -356px 0 no-repeat;
+  height: 19px;
+  width: 19px;
+}
+.filter-radio .filter-radio__point:checked + .filter-radio__text:before {
+  background: url('../../img/check-se87e9f6d34.png') -267px 0 no-repeat;
+  height: 19px;
+  width: 19px;
 }
 
-.shop-radio-item__text:hover:before {
-  background: url(../img/left-ico-radio-hover.png) no-repeat 0 0;
-}
-
-.shop-radio-item__point:checked + .shop-radio-item__text:before {
-  background: url(../img/left-ico-radio-chk.png) no-repeat 0 0;
-}
-
-/* ╨С╤А╨╡╨╜╨┤╤Л */
-.brand-check {
+/* Checkbox Style */
+.filter-check {
   height: 100%;
   padding: 5px 30px 0 30px;
 }
-
-.brand-check__item {
+.filter-check .filter-check__item {
   list-style: none;
   margin-bottom: 17px;
 }
-
-.brand-check-item__point {
+.filter-check .filter-check__point {
   display: none;
   margin-bottom: 16px;
 }
-
-.brand-check-item__text {
+.filter-check .filter-check__text {
   display: block;
   cursor: pointer;
   position: relative;
@@ -153,8 +139,7 @@
   font-family: OpenSans_Regular;
   font-size: 1.4em;
 }
-
-.brand-check-item__text:before {
+.filter-check .filter-check__text:before {
   content: '';
   display: inline-block;
   width: 19px;
@@ -163,59 +148,17 @@
   position: absolute;
   left: 0;
   bottom: 1px;
-  background: url(../img/left-ico-check-un.png) no-repeat 0 0;
-}
-
-.brand-check-item__text:hover:before {
-  background: url(../img/left-ico-check-hover.png) no-repeat 0 0;
-}
-
-.brand-check-item__point:checked + .brand-check-item__text:before {
-  background: url(../img/left-ico-check-chk.png) no-repeat 0 0;
-}
-
-/* ╨Ю╨┐╨╡╤А╨░╤Ж╨╕╨╛╨╜╨╜╤Л╨╡ ╤Б╨╕╤Б╤В╨╡╨╝╤Л */
-.system-check {
-  height: 100%;
-  padding: 5px 30px 0 30px;
-}
-
-.system-check__item {
-  list-style: none;
-  margin-bottom: 17px;
-}
-
-.system-check-item__point {
-  display: none;
-  margin-bottom: 16px;
-}
-
-.system-check-item__text {
-  display: block;
-  cursor: pointer;
-  position: relative;
-  padding-left: 29px;
-  padding-bottom: 1px;
-  font-family: OpenSans_Regular;
-  font-size: 1.4em;
-}
-
-.system-check-item__text:before {
-  content: '';
-  display: inline-block;
-  width: 19px;
+  background: url('../../img/check-se87e9f6d34.png') -178px 0 no-repeat;
   height: 19px;
-  margin-right: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 1px;
-  background: url(../img/left-ico-check-un.png) no-repeat 0 0;
+  width: 19px;
 }
-
-.system-check-item__text:hover:before {
-  background: url(../img/left-ico-check-hover.png) no-repeat 0 0;
+.filter-check .filter-check__text:hover:before {
+  background: url('../../img/check-se87e9f6d34.png') -89px 0 no-repeat;
+  height: 19px;
+  width: 19px;
 }
-
-.system-check-item__point:checked + .system-check-item__text:before {
-  background: url(../img/left-ico-check-chk.png) no-repeat 0 0;
+.filter-check .filter-check__point:checked + .filter-check__text:before {
+  background: url('../../img/check-se87e9f6d34.png') 0 0 no-repeat;
+  height: 19px;
+  width: 19px;
 }

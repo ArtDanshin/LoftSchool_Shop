@@ -1,3 +1,14 @@
+@mixin get-sprite ($map, $icon) {
+	$sprite-image: sprite-file($map, $icon);
+	$sprite-map: sprite-url($map);
+	$sprite-position: sprite-position($map, $icon);
+
+	background: $sprite-map $sprite-position no-repeat;
+
+	height: image-height($sprite-image);
+	width: image-width($sprite-image);
+}
+
 /* Блок категорий */
 
 .category-upper {
@@ -8,31 +19,33 @@
 	margin: 0;
 	padding: 0;
 	margin-bottom: 37px;
+
+	.category-upper__item {
+		list-style: none;
+		width: 100%;
+		background-color: #fbfbfb;
+		border-top: 1px #dee1e4 solid;
+	}
+	.category-upper__item:first-child {
+		border-top: 0;
+		border-radius: 4px 4px 0 0;
+	}
+	.category-upper__item:last-child {
+		border-radius: 0 0 4px 4px;
+	}
+	.category-upper__link {
+		display: block;
+		font-family: OpenSans_Regular;
+		font-size: 1.4em;
+		color: #333333;
+		text-decoration: none;
+		padding: 12px 30px 14px;
+	}
+	.category-upper__item_current {
+		background-color: #d9e5ea;
+	}
 }
-.category-upper__item {
-	list-style: none;
-	width: 100%;
-	background-color: #fbfbfb;
-	border-top: 1px #dee1e4 solid;
-}
-.category-upper__item:first-child {
-	border-top: 0;
-	border-radius: 4px 4px 0 0;
-}
-.category-upper__item:last-child {
-	border-radius: 0 0 4px 4px;
-}
-.category-upper-item__link {
-	display: block;
-	font-family: OpenSans_Regular;
-	font-size: 1.4em;
-	color: #333333;
-	text-decoration: none;
-	padding: 12px 30px 14px;
-}
-.category-upper-item_current {
-	background-color: #d9e5ea;
-}
+
 
 /* Блок фильтров */
 
@@ -43,153 +56,123 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-}
-.filters__item {
-	list-style: none;
-	width: 100%;
-	background-color: #fbfbfb;
-	border: 0;
-	border-top: 1px #dee1e4 solid;
-}
-.filters__item:first-child {
-	border-top: 0;
-	border-radius: 4px 4px 0 0;
-}
-.filters__item:last-child {
-	border-radius: 0 0 4px 4px;
-}
-.filters-item__head:hover {
-	background-color: #d9e5ea
-}
-.filter-item-head__title {
-	display: block;
-	font-family: OpenSans_Bold;
-	font-size: 1.4em;
-	color: #333333;
-	text-decoration: none;
-	padding: 12px 30px 14px;
-}
-.filters-item__body {
-	display: block;
-}
-/* Наличие в магазинах*/
 
-.shop-radio-item__point {
-	display: none;
+	.filters__item {
+		list-style: none;
+		width: 100%;
+		background-color: #fbfbfb;
+		border: 0;
+		border-top: 1px #dee1e4 solid;
+	}
+	.filters__item:first-child {
+		border-top: 0;
+		border-radius: 4px 4px 0 0;
+	}
+	.filters__item:last-child {
+		border-radius: 0 0 4px 4px;
+	}
+	.filters-item__head:hover {
+		background-color: #d9e5ea
+	}
+	.filter-item-head__title {
+		display: block;
+		font-family: OpenSans_Bold;
+		font-size: 1.4em;
+		color: #333333;
+		text-decoration: none;
+		padding: 12px 30px 14px;
+	}
+	.filters-item__body {
+		display: block;
+	}
 }
-.shop-radio {
+
+/* Radio Check */
+
+.filter-radio {
 	height: 100%;
 	padding: 5px 30px 0 30px;
-}
-.shop-radio__item {
-	list-style: none;
-	margin-bottom: 16px;
-}
-.shop-radio-item__text {
-	display: block;
-	cursor: pointer;
-	position: relative;
-	padding-left: 29px;
-	padding-bottom: 1px; 
-	font-family: OpenSans_Regular;
-	font-size: 1.4em;
-}
-.shop-radio-item__text:before {
-	content: '';
-	display: inline-block;
-	width: 19px;
-	height: 19px;
-	margin-right: 10px;
-	position: absolute;
-	left: 0;
-	bottom: 1px;
-	background: url(../img/left-ico-radio-un.png) no-repeat 0 0;
-}
-.shop-radio-item__text:hover:before {
-	background: url(../img/left-ico-radio-hover.png) no-repeat 0 0;
-}
-.shop-radio-item__point:checked + .shop-radio-item__text:before {
-	background: url(../img/left-ico-radio-chk.png) no-repeat 0 0;
+
+	.filter-radio__item {
+		list-style: none;
+		margin-bottom: 16px;
+	}
+	.filter-radio__point {
+		display: none;
+	}
+	.filter-radio__text {
+		display: block;
+		cursor: pointer;
+		position: relative;
+		padding-left: 29px;
+		padding-bottom: 1px; 
+		font-family: OpenSans_Regular;
+		font-size: 1.4em;
+	}
+
+	$check-map: sprite-map('check/*.png', $spacing: 70px, $layout: horizontal);
+
+	.filter-radio__text:before {
+		content: '';
+		display: inline-block;
+		width: 19px;
+		height: 19px;
+		margin-right: 10px;
+		position: absolute;
+		left: 0;
+		bottom: 1px;
+		@include get-sprite($check-map, radio-un);
+	}
+	.filter-radio__text:hover:before {
+		@include get-sprite($check-map, radio-hover);
+	}
+	.filter-radio__point:checked + .filter-radio__text:before {
+		@include get-sprite($check-map, radio-chk);
+	}
 }
 
-/* Бренды */
 
-.brand-check {
+/* Checkbox Style */
+
+.filter-check {
 	height: 100%;
 	padding: 5px 30px 0 30px;
-}
-.brand-check__item {
-	list-style: none;
-	margin-bottom: 17px;
-}
-.brand-check-item__point {
-	display: none;
-	margin-bottom: 16px;
-}
-.brand-check-item__text {
-	display: block;
-	cursor: pointer;
-	position: relative;
-	padding-left: 29px;
-	padding-bottom: 1px; 
-	font-family: OpenSans_Regular;
-	font-size: 1.4em;
-}
-.brand-check-item__text:before {
-	content: '';
-	display: inline-block;
-	width: 19px;
-	height: 19px;
-	margin-right: 10px;
-	position: absolute;
-	left: 0;
-	bottom: 1px;
-	background: url(../img/left-ico-check-un.png) no-repeat 0 0;
-}
-.brand-check-item__text:hover:before {
-	background: url(../img/left-ico-check-hover.png) no-repeat 0 0;
-}
-.brand-check-item__point:checked + .brand-check-item__text:before {
-	background: url(../img/left-ico-check-chk.png) no-repeat 0 0;
-}
 
-/* Операционные системы */
+	.filter-check__item {
+		list-style: none;
+		margin-bottom: 17px;
+	}
+	.filter-check__point {
+		display: none;
+		margin-bottom: 16px;
+	}
+	.filter-check__text {
+		display: block;
+		cursor: pointer;
+		position: relative;
+		padding-left: 29px;
+		padding-bottom: 1px; 
+		font-family: OpenSans_Regular;
+		font-size: 1.4em;
+	}
 
-.system-check {
-	height: 100%;
-	padding: 5px 30px 0 30px;
-}
-.system-check__item {
-	list-style: none;
-	margin-bottom: 17px;
-}
-.system-check-item__point {
-	display: none;
-	margin-bottom: 16px;
-}
-.system-check-item__text {
-	display: block;
-	cursor: pointer;
-	position: relative;
-	padding-left: 29px;
-	padding-bottom: 1px; 
-	font-family: OpenSans_Regular;
-	font-size: 1.4em;
-}
-.system-check-item__text:before {
-	content: '';
-	display: inline-block;
-	width: 19px;
-	height: 19px;
-	margin-right: 10px;
-	position: absolute;
-	left: 0;
-	bottom: 1px;
-	background: url(../img/left-ico-check-un.png) no-repeat 0 0;
-}
-.system-check-item__text:hover:before {
-	background: url(../img/left-ico-check-hover.png) no-repeat 0 0;
-}
-.system-check-item__point:checked + .system-check-item__text:before {
-	background: url(../img/left-ico-check-chk.png) no-repeat 0 0;
+	$check-map: sprite-map('check/*.png', $spacing: 70px, $layout: horizontal);
+
+	.filter-check__text:before {
+		content: '';
+		display: inline-block;
+		width: 19px;
+		height: 19px;
+		margin-right: 10px;
+		position: absolute;
+		left: 0;
+		bottom: 1px;
+		@include get-sprite($check-map, check-un);
+	}
+	.filter-check__text:hover:before {
+		@include get-sprite($check-map, check-hover);
+	}
+	.filter-check__point:checked + .filter-check__text:before {
+		@include get-sprite($check-map, check-chk);
+	}
 }

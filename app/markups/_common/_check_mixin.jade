@@ -1,0 +1,21 @@
+mixin radioButs(classRadio, nameRadio, idRadio, valueRadios, labelRadio, chk)
+	ul(class=classRadio + "-radio")
+		each valueRadio, i in valueRadios
+			li(class=classRadio + "-radio__item")
+				if chk == i
+					input(class=classRadio + "-radio__point" id=idRadio[i] type="radio" name=nameRadio value=valueRadio[i] checked)
+					label(class=classRadio + "-radio__text" for=idRadio[i])= labelRadio[i]
+				else
+					input(class=classRadio + "-radio__point" id=idRadio[i] type="radio" name=nameRadio value=valueRadio)
+					label(class=classRadio + "-radio__text" for=idRadio[i])= labelRadio[i]
+
+mixin checkButs(classCheck, nameCheck, idCheck, valueChecks, labelCheck, chk)
+	ul(class=classCheck + "-check")
+		each valueCheck, i in valueChecks
+			li(class=classCheck + "-check__item")
+				if chk[i] == 1
+					input(class=classCheck + "-check__point" id=idCheck[i] type="checkbox" name=nameCheck value=valueCheck[i] checked)
+					label(class=classCheck + "-check__text" for=idCheck[i])= labelCheck[i]
+				else
+					input(class=classCheck + "-check__point" id=idCheck[i] type="checkbox" name=nameCheck value=valueCheck[i])
+					label(class=classCheck + "-check__text" for=idCheck[i])= labelCheck[i]

@@ -44,7 +44,7 @@
 		text-indent: -9999px;
 	}
 
-	$socials-map: sprite-map('socials/*.png', $spacing: 70px);
+	$socials-map: sprite-map('socials/*.png', $spacing: 70px, $layout: horizontal);
 	
 	$socials: fb, vk, tw;
 
