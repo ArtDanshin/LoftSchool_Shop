@@ -14,6 +14,9 @@
 }
 .product__slide {
 	width: 150px;
+	padding: 0;
+	margin: 0 auto;
+	margin-bottom: 8px;
 
 	.product-slide__img {
 		list-style: none;
@@ -57,7 +60,7 @@
 	font-family: OpenSans_SemiBold;
 	font-size: 1.4em;
 	text-align: center;
-	margin-bottom: 10px; 
+	margin-bottom: 3px; 
 }
 .product__text {
 	display: none;
@@ -70,22 +73,22 @@
 	.product-charact__item{
 		list-style: none;
 		position: relative;
-		height: 21px; 
+		height: 20px; 
 		width: 100%;
 
 		.product-charact-item__left{
 			position: absolute;
 			left: 4px;
-			height: 21px;
-			line-height: 21px;
+			height: 20px;
+			line-height: 20px;
 			font-family: OpenSans_Regular;
 			font-size: 1.4em;
 		}
 		.product-charact-item__rigth {
 			position: absolute;
 			right: 4px;
-			height: 21px;
-			line-height: 21px;
+			height: 20px;
+			line-height: 20px;
 			font-family: OpenSans_Regular;
 			font-size: 1.4em;
 		}
@@ -97,10 +100,10 @@
 
 .product__rating {
 	position: relative;
-	width: 130px;
+	width: 134px;
 	height: 15px;
 	margin: 0 auto;
-	margin-bottom: 5px;
+	margin-bottom: 6px;
 
 	.product-rating__stars {
 		position: absolute;
@@ -144,10 +147,10 @@
 }
 .product__wrap-price-shop {
 	position: relative;
-	width: 200px;
-	height: 70px;
+	width: 210px;
+	height: 63px;
 	margin: 0 auto;
-	margin-bottom: 15px;
+	margin-bottom: 19px;
 
 	.product__price {
 		position: absolute;
@@ -178,5 +181,40 @@
 		border: 0;
 		height: 33px;
 		width: 103px;
+	}
+}
+
+.wrap-pages {
+	clear: both;
+	width: 100%;
+	position: relative;
+
+	.wrap-pages__pages.pages {
+		position: absolute;
+		right: 0;
+	}
+	.page__item.page-item {
+		list-style: none;
+		display: inline-block;
+		width: 26px;
+		height: 25px;
+		line-height: 25px;
+		text-align: center;
+		background-color: #fefefe;
+		border: 1px #c8c8c8 solid;
+		border-radius: 4px;
+	}
+	.page__item.page-item:hover {
+		background-color: #e0e0e0;
+	}
+	.page-item__link {
+		display: block;
+		color: #7f7f7f;
+		font-family: OpenSans_Bold;
+		font-size: 1.2em;
+		text-decoration: none;
+	}
+	.page-item__link:hover {
+		text-decoration: underline;
 	}
 }
