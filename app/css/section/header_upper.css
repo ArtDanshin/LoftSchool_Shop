@@ -90,9 +90,9 @@
 .map-point:after {
   content: '';
   position: absolute;
-  width: 12px;
+  background: url('../../img/other-s6c32c8da3e.png') -176px 0 no-repeat;
   height: 16px;
-  background: url(../img/icon-mappin.png) no-repeat 0 0;
+  width: 12px;
   top: 3px;
   left: -20px;
 }
@@ -115,9 +115,9 @@
 .phone-point:after {
   content: '';
   position: absolute;
-  width: 12px;
+  background: url('../../img/other-s6c32c8da3e.png') -258px 0 no-repeat;
   height: 16px;
-  background: url(../img/icon-phone.png) no-repeat 0 0;
+  width: 12px;
   top: 4px;
   left: -20px;
 }

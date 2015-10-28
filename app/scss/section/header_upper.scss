@@ -66,6 +66,9 @@
 	height: 77px;
 	position: relative;
 }
+
+$otherIcon-map: sprite-map('other/*.png', $spacing: 70px, $layout: horizontal);
+
 .map-point {
 	float: left;
 	position: relative;
@@ -84,9 +87,7 @@
 .map-point:after {
 	content: '';
 	position: absolute;
-	width: 12px;
-	height: 16px;
-	background: url(../img/icon-mappin.png) no-repeat 0 0;
+	@include get-sprite($otherIcon-map, mappin);
 	top: 3px;
 	left: -20px;
 }
@@ -108,9 +109,7 @@
 .phone-point:after {
 	content: '';
 	position: absolute;
-	width: 12px;
-	height: 16px;
-	background: url(../img/icon-phone.png) no-repeat 0 0;
+	@include get-sprite($otherIcon-map, phone);
 	top: 4px;
 	left: -20px;
 }

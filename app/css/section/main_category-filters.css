@@ -33,6 +33,9 @@
 .category-upper .category-upper__item_current {
   background-color: #d9e5ea;
 }
+.category-upper .category-upper__item:hover {
+  background-color: #d9e5ea;
+}
 
 /* ╨С╨╗╨╛╨║ ╤Д╨╕╨╗╤М╤В╤А╨╛╨▓ */
 .filters {
