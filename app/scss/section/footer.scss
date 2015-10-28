@@ -1,0 +1,93 @@
+/* Футер */
+
+.page-footer {
+	height: 220px;
+	margin-top: -220px;
+	min-width: 1100px;
+	background: url(../img/bg-foot.jpg);
+}
+
+.page-footer__left {
+	float: left;
+	width: 240px;
+	margin-top: 70px;
+}
+.page-footer__right {
+	float: right;
+	width: 590px;
+}
+
+/* Блок социальных иконок в подвале */
+
+.social-foot {
+	margin: 35px 4px 20px 0;
+	padding: 0;
+	float: right;
+}
+.social-foot__item {
+	list-style: none;
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	margin-left: 26px;
+}
+.social-foot__item:first-child {
+	margin-left: 0;
+}
+.social-foot__link {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-indent: -9999px;
+
+}
+.social-foot__link.social-foot__link_fb {
+	background: url(../img/Icon-foot-fb-circle.png) no-repeat;
+}
+.social-foot__link.social-foot__link_fb:hover {
+	background: url(../img/Icon-foot-fb-circle-hover.png) no-repeat;
+}
+.social-foot__link.social-foot__link_tw {
+	background: url(../img/Icon-foot-tw-circle.png) no-repeat;
+}
+.social-foot__link.social-foot__link_tw:hover {
+	background: url(../img/Icon-foot-tw-circle-hover.png) no-repeat;
+}
+.social-foot__link.social-foot__link_vk {
+	background: url(../img/Icon-foot-vk-circle.png) no-repeat;
+}
+.social-foot__link.social-foot__link_vk:hover {
+	background: url(../img/Icon-foot-vk-circle-hover.png) no-repeat;
+}
+
+/* Нижняя навигация */
+
+.navigation-foot {
+	float: right;
+	width: 100%;
+	text-align: right;
+	margin-right: 4px; 
+}
+.navigation-foot__item {
+	list-style: none;
+	display: inline-block;
+	margin-left: 24px;
+	margin-bottom: 16px;
+}
+.navigation-foot__link {
+	font-family: OpenSans_Regular;
+	font-size: 1.4em;
+	color: #ffffff;
+}
+.page-footer__lower {
+	clear: both;
+	border-top: 1px #494949 solid; 
+	width: 100%;
+	text-align: center;
+	padding: 5px 0px;
+}
+.copyright {
+	font-family: OpenSans_Regular;
+	font-size: 1.2em;
+	color: #ffffff;
+}

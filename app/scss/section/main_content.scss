@@ -1,0 +1,24 @@
+/* Основной блок */
+
+.main-content {
+	background-color: #f4f4f4;
+	height: 100%;
+}
+
+/* Основной блок - Левая колонка */
+
+.main-content-left {
+	float: left;
+	width: 335px;
+	margin-bottom: 30px;
+}
+
+/* Основной блок - Правая колонка */
+
+.main-content-right {
+	float: right;
+	width: 745px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+}

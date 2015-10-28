@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* ╨Ш╨╜╤Д╨╛╤А╨╝╨░╤Ж╨╕╤П ╨╛ ╨┐╤А╨╛╨┤╤Г╨║╤В╨╡ */
+.products {
+  margin: 0;
+  padding: 0;
+}
+
+.products__item {
+  width: 235px;
+  list-style: none;
+  background-color: #fbfbfb;
+  border: 1px #dee1e4 solid;
+  border-radius: 5px;
+}
+
+.product__slide {
+  width: 135px;
+}
+
+.product-slide__img {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px #dee1e4 solid;
+}
+
+.product-slide__img:first-child {
+  width: 135px;
+  height: 135px;
+}

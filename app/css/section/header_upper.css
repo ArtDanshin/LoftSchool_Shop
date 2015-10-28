@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/* ╨Т╨╡╤А╤Е╨╜╨╕╨╣ ╨▒╨░╨╜╨╜╨╡╤А */
+.upper-header {
+  background-color: #FFFFFF;
+  border-bottom: 2px #ebedef solid;
+  width: 100%;
+}
+
+/* ╨С╨╗╨╛╨║ ╤Б╨╛╤Ж╨╕╨░╨╗╤М╨╜╤Л╤Е ╨╕╨║╨╛╨╜╨╛╨║ */
+.upper-header-left {
+  float: left;
+  width: 120px;
+  height: 77px;
+}
+
+.social-head {
+  margin: 0;
+  padding: 0;
+  margin: 26px 0;
+}
+
+.social-head__item {
+  list-style: none;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-left: 14px;
+}
+
+.social-head__item:first-child {
+  margin-left: 0;
+}
+
+.social-head__link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-indent: -9999px;
+}
+
+.social-head__link.social-head__link_fb {
+  background: url(../img/Icon-Facebook-circle.png) no-repeat;
+}
+
+.social-head__link.social-head__link_fb:hover {
+  background: url(../img/Icon-Facebook-circle-hover.png) no-repeat;
+}
+
+.social-head__link.social-head__link_tw {
+  background: url(../img/Icon-tw-circle.png) no-repeat;
+}
+
+.social-head__link.social-head__link_tw:hover {
+  background: url(../img/Icon-tw-circle-hover.png) no-repeat;
+}
+
+.social-head__link.social-head__link_vk {
+  background: url(../img/Icon-vk-circle.png) no-repeat;
+}
+
+.social-head__link.social-head__link_vk:hover {
+  background: url(../img/Icon-vk-circle-hover.png) no-repeat;
+}
+
+/* ╨Я╤А╨░╨▓╤Л╨╣ ╨▒╨╗╨╛╨║ ╨Т╨╡╤А╤Е╨╜╨╡╨│╨╛ ╨▒╨░╨╜╨╜╨╡╤А╨░ */
+.upper-header-right {
+  float: right;
+  width: 445px;
+  height: 77px;
+  position: relative;
+}
+
+.map-point {
+  float: left;
+  position: relative;
+  width: 205px;
+  top: 50%;
+  bottom: 50%;
+  margin-top: -12px;
+}
+
+.map-point:after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 16px;
+  background: url(../img/icon-mappin.png) no-repeat 0 0;
+  top: 3px;
+  left: -20px;
+}
+
+.map-point__link {
+  font-family: OpenSans_SemiBold;
+  font-size: 1.4em;
+  text-decoration: none;
+  color: #333333;
+}
+
+.phone-point {
+  float: right;
+  position: relative;
+  width: 160px;
+  top: 50%;
+  bottom: 50%;
+  margin-top: -14px;
+}
+
+.phone-point__link {
+  font-family: OpenSans_Bold;
+  font-size: 1.8em;
+  text-decoration: none;
+  color: #333333;
+}
+
+.phone-point:after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 16px;
+  background: url(../img/icon-phone.png) no-repeat 0 0;
+  top: 4px;
+  left: -20px;
+}

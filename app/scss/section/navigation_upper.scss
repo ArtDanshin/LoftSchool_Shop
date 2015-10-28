@@ -1,0 +1,40 @@
+/* Навигация верхняя */
+
+.navigation {
+	background-color: #FFFFFF;
+	height: 52px;
+	border-bottom: 2px #ebedef solid;
+	margin-bottom: 28px;
+}
+.navigation-head {
+	margin: 0;
+	padding: 0;
+	height: 52px;
+	margin-left: 8px;
+}
+.navigation-head__item {
+	list-style: none;
+	display: inline-block;
+	margin-left: -3px;
+}
+.navigation-head__item_current {
+	background-color: #ff6600;
+}
+.navigation-head__item:hover {
+	background-color: #e4e2e2;
+} 
+.navigation-head__item_current:hover {
+	background-color: #ff6600;
+}
+.navigation-head__link {
+	font-family: OpenSans_regular;
+	font-size: 1.6em;
+	text-decoration: none;
+	color: #333333;
+	display: block;
+	padding: 15px 15px;
+}
+.navigation-head__link_current {
+	font-family: OpenSans_SemiBold;
+	color: #ffffff;
+}
