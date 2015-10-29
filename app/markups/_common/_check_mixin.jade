@@ -19,3 +19,9 @@ mixin checkButs(classCheck, nameCheck, idCheck, valueChecks, labelCheck, chk)
 				else
 					input(class=classCheck + "-check__point" id=idCheck[i] type="checkbox" name=nameCheck value=valueCheck[i])
 					label(class=classCheck + "-check__text" for=idCheck[i])= labelCheck[i]
+
+mixin colorButs(classItem, colorItems, currentItem)
+	ul(class=classItem + "-color-block")
+		each colorItem, i in colorItems
+			li(class=classItem + "-color-block__item" + ((currentItem == i) ? " " + classItem + "-color-block__item_current" : "") style="background-color: " + colorItem)
+				a(href="#" class=classItem + "-color-block__link")= colorItem
