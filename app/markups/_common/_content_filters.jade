@@ -1,28 +1,28 @@
 ul.filters
-	li.filters__item.filters-item
-		.filters-item__head.filter-item-head
+	li.filters__item.filters__item_active
+		.filters-item__head
 			a(href="#").filter-item-head__title Наличие в магазинах
-		.filters-item__body
+		.filters-item__body.filters-item__body_active
 			+radioButs('filter','shop',['shopAll', 'shopIn'],['shopAll','shopIn'],['Во всех магазинах','В ближайшем магазине'],'0')
 
-	li.filters__item.filters-item
-		.filters-item__head.filter-item-head
+	li.filters__item.filters__item_active
+		.filters-item__head
 			a(href="#").filter-item-head__title Бренды
 		.filters-item__body
 			+checkButs('filter','brand',['lenovo', 'Apple','Samsung','Asus','Motorola'],['lenovo', 'Apple','Samsung','Asus','Motorola'],['Lenovo', 'Apple','Samsung','Asus','Motorola'],['1','1','1','0','0'])
-	li.filters__item.filters-lower-item
-		.filters-item__head.filter-item-head
+	li.filters__item.filters__item_active
+		.filters-item__head
 			a(href="#").filter-item-head__title Цена
-		.filters-item__body 
+		.filters-item__body
 			.filter-price
-	li.filters__item.filters-item
-		.filters-item__head.filter-item-head
+	li.filters__item.filters__item_active
+		.filters-item__head
 			a(href="#").filter-item-head__title Цвет
-		.filters-item__body 
+		.filters-item__body
 			+colorButs('filter',['#ffffff','#cccccc','#000000','#0a3153','#ff1800','#fff343','#fb914a','#92c37c','#40a6ff','#9870ad','#dc78ad','#7f401d'],'3')
 
-	li.filters__item.filters-item
-		.filters-item__head.filter-item-head
+	li.filters__item.filters__item_active
+		.filters-item__head
 			a(href="#").filter-item-head__title Операционные системы
 		.filters-item__body
 			+checkButs('filter','brand',['Android', 'iOS','WindowsMobile','Symbian','Custom'],['Android', 'iOS','WindowsMobile','Symbian','Custom'],['Android', 'iOS','Windows Mobile','Symbian','Custom'],['1','1','1','0','0'])
