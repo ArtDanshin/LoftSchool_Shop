@@ -4,17 +4,23 @@ ul.filters
 			a(href="#").filter-item-head__title Наличие в магазинах
 		.filters-item__body.filters-item__body_active
 			+radioButs('filter','shop',['shopAll', 'shopIn'],['shopAll','shopIn'],['Во всех магазинах','В ближайшем магазине'],'0')
-
 	li.filters__item.filters__item_active
 		.filters-item__head
 			a(href="#").filter-item-head__title Бренды
 		.filters-item__body
 			+checkButs('filter','brand',['lenovo', 'Apple','Samsung','Asus','Motorola'],['lenovo', 'Apple','Samsung','Asus','Motorola'],['Lenovo', 'Apple','Samsung','Asus','Motorola'],['1','1','1','0','0'])
+			a.filters-check-reset Сбросить фильтр
 	li.filters__item.filters__item_active
 		.filters-item__head
 			a(href="#").filter-item-head__title Цена
 		.filters-item__body
-			.filter-price
+			.filter-price__in-wrap
+				label(class="filter-price__text" for=priceIn) от
+				input(class="filter-price__input" id='priceIn' type="text" name=priceIn)
+			.filter-price__out-wrap
+				label(class="filter-price__text" for=priceOut) до
+				input(class="filter-price__input" id='priceOut' type="text" name=priceOut)
+			.filter-price__slider
 	li.filters__item.filters__item_active
 		.filters-item__head
 			a(href="#").filter-item-head__title Цвет
@@ -26,3 +32,4 @@ ul.filters
 			a(href="#").filter-item-head__title Операционные системы
 		.filters-item__body
 			+checkButs('filter','brand',['Android', 'iOS','WindowsMobile','Symbian','Custom'],['Android', 'iOS','WindowsMobile','Symbian','Custom'],['Android', 'iOS','Windows Mobile','Symbian','Custom'],['1','1','1','0','0'])
+			a.filters-check-reset Сбросить фильтр

@@ -180,6 +180,23 @@
 	}
 }
 
+/* Price Style */
+
+.filter-price__in-wrap {
+	width: 50%;
+	float: left;
+	margin-bottom: 8px;
+}
+
+.filter-price__out-wrap {
+	width: 50%;
+	float: right;
+	margin-bottom: 8px;
+}
+.filter-price__slider {
+	clear: both;
+}
+
 /* Color Check */
 
 .filter-color-block {

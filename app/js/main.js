@@ -7,6 +7,8 @@ var loftShop = (function () {
 		_accordeon();
 		_styleCat();
 		_slideShow();
+		_textColumn();
+		_resetCheck();
 	};
 
 	// Прослушивание событий
@@ -23,12 +25,30 @@ var loftShop = (function () {
 
 	// jQuery UI Slider - Слайдер фильтра цены
 	var _sliderPrice = function () {
-		$( ".filter-price" ).slider({
+		$( ".filter-price__slider" ).slider({
 			range: true,
 	 		min: 0,
 			max: 500,
-			values: [ 75, 300 ]
+			values: [ 75, 300 ],
+			slide: function( event, ui ) {
+				$( "#priceIn" ).val( ui.values[ 0 ]);
+				$( "#priceOut" ).val( ui.values[ 1 ]);
+			}
 		});
+			$( "#priceIn" ).val( $( ".filter-price__slider" ).slider( "values", 0 ) );
+			$( "#priceOut" ).val( $( ".filter-price__slider" ).slider( "values", 1 ) );
+	}
+
+	// Сброс фильтров
+	var _resetCheck = function () {
+		$('.filters-check-reset').on('click', function(event) {
+			event.preventDefault();
+			var $this = $(this),
+				item = $this.closest('.filters-item__body');
+				check = item.find('.filter-check__point')
+
+				check.attr('checked', false);
+		})
 	}
 
 	// Аккордеон
@@ -99,6 +119,15 @@ var loftShop = (function () {
 				});
 			}
 		})
+	}
+
+	// Columnizer
+
+	var _textColumn = function () {
+		$('.info-page__text').columnize({
+			columns: 2
+		});
+
 	}
 
 	return {
