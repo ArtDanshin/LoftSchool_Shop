@@ -2,10 +2,13 @@ mixin shop-item(classItem,imgItem, articleItem, titleItems, textItem, typeSim, q
 	each titleItem, i in titleItems
 		li(class=classItem+ 's__item clearfix')
 			div(class=classItem + '__wrap-img-artic')
+				div(class=classItem + '__wrap-img-big')
+					img(src="http://lorempixel.com/100/125/technics/1" alt="Image " + titleItem + " 1 Big" class=classItem + "-slide-img-current")
 				ul(class=classItem+ '__slide')
-					- for (var j = 1; j < 5; j++)
+					- for (var j = 1; j < 4; j++)
 						li(class=classItem + "-slide__img")
-							img(src="img/item/" + imgItem[i] + "-" + j + ".png" alt="Image " + titleItem + " " + j class=classItem + "-slide-img" + ((j == 1) ? " " + classItem + "-slide-img_current" : ""))
+							a(href="#" class=classItem + "-slide__link")
+								img(src="http://lorempixel.com/100/125/technics/" + j alt="Image " + titleItem + " " + j class=classItem + "-slide-img")
 				div(class=classItem + "__article")= "Артикул " +  articleItem[i]
 			div(class=classItem + '__wrap-info')
 				div(class=classItem + '__wrap-info_left')

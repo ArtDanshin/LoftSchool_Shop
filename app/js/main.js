@@ -6,6 +6,7 @@ var loftShop = (function () {
 		_sliderPrice();
 		_accordeon();
 		_styleCat();
+		_slideShow();
 	};
 
 	// Прослушивание событий
@@ -74,6 +75,28 @@ var loftShop = (function () {
 				$('.view-points__link_list').addClass('view-points__link_list-current');
 				$('.products').removeClass('products_tab').removeClass('products_all').removeClass('products_list');
 				$('.products').addClass('products_list');
+			}
+		})
+	}
+
+	// Слайдшоу
+	var _slideShow = function () {
+		$('.product-slide__link').on('click', function(event){
+			event.preventDefault();
+
+			var $this = $(this),
+				item = $this.closest('.product-slide__img'),
+				conteiner = $this.closest('.product__wrap-img-artic'),
+				display = conteiner.find('.product__wrap-img-big'),
+				path = item.find('.product-slide-img').attr('src'),
+				duration = 300;
+
+			if (!item.hasClass('active')) {
+				item.addClass('active').siblings().removeClass('active');
+
+				display.find('.product-slide-img-current').fadeOut('duration', function() {
+					$(this).attr('src', path).fadeIn(duration);
+				});
 			}
 		})
 	}
