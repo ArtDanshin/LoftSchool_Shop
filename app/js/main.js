@@ -5,6 +5,7 @@ var loftShop = (function () {
 		_selectSort();
 		_sliderPrice();
 		_accordeon();
+		_styleCat();
 	};
 
 	// Прослушивание событий
@@ -45,6 +46,34 @@ var loftShop = (function () {
 			} else {
 				item.removeClass('filters__item_active');
 				content.stop(true, true).slideUp(duration)
+			}
+		})
+	}
+
+	// Вид каталога
+	var _styleCat = function () {
+		$('.view-points__link').on('click', function(event) {
+			event.preventDefault();
+
+			var $this = $(this);
+
+			if ($this.hasClass('view-points__link_all')) {
+				$('.view-points__link').removeClass('view-points__link_tab-current').removeClass('view-points__link_list-current').removeClass('view-points__link_all-current');
+				$('.view-points__link_all').addClass('view-points__link_all-current');
+				$('.products').removeClass('products_tab').removeClass('products_all').removeClass('products_list');
+				$('.products').addClass('products_all');
+			}
+			if ($this.hasClass('view-points__link_tab')) {
+				$('.view-points__link').removeClass('view-points__link_tab-current').removeClass('view-points__link_list-current').removeClass('view-points__link_all-current');
+				$('.view-points__link_tab').addClass('view-points__link_tab-current');
+				$('.products').removeClass('products_tab').removeClass('products_all').removeClass('products_list');
+				$('.products').addClass('products_tab');
+			}
+			if ($this.hasClass('view-points__link_list')) {
+				$('.view-points__link').removeClass('view-points__link_tab-current').removeClass('view-points__link_list-current').removeClass('view-points__link_all-current');
+				$('.view-points__link_list').addClass('view-points__link_list-current');
+				$('.products').removeClass('products_tab').removeClass('products_all').removeClass('products_list');
+				$('.products').addClass('products_list');
 			}
 		})
 	}
