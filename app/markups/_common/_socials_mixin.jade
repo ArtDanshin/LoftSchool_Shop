@@ -2,4 +2,5 @@ mixin socials(classSocial, indexSocial, nameSocial, linkSocial)
 	ul(class="social-" + classSocial)
 		each name, i in nameSocial
 			li(class="social-" + classSocial + "__item")
-				a(href=linkSocial[i] class="social-" + classSocial + "__link" + " social-" + classSocial + "__link_" + indexSocial[i])= name
+				a(href=linkSocial[i] class="social-" + classSocial + "__link")= name
+					div(class="social-" + classSocial + "__img" + " social-" + classSocial + "__img_" + indexSocial[i])

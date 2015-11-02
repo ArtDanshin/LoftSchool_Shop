@@ -41,15 +41,26 @@
 		width: 43px;
 		height: 43px;
 		margin-left: 26px;
+		background-color: #ffffff;
+		border-radius: 50%;
 	}
 	.social-foot__item:first-child {
 		margin-left: 0;
 	}
 	.social-foot__link {
 		display: block;
-		height: 100%;
-		width: 100%;
+		position: relative;
 		text-indent: -9999px;
+		width: 100%;
+		height: 100%;
+	}
+	.social-foot__img {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
 	}
 
 	$socials-map: sprite-map('socials/*.png', $spacing: 70px, $layout: horizontal);
@@ -57,10 +68,10 @@
 	$socials: fb, vk, tw;
 
 	@each $social in $socials {
-		.social-foot__link_#{$social} {
+		.social-foot__img_#{$social} {
 			@include get-sprite($socials-map, foot-#{$social});
 		}
-		.social-foot__link_#{$social}:hover {
+		.social-foot__img_#{$social}:hover {
 			@include get-sprite($socials-map, foot-#{$social}-hover);
 		}
 	}
