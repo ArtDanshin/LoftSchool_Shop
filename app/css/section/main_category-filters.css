@@ -54,13 +54,6 @@
   border: 0;
   border-top: 1px #dee1e4 solid;
 }
-.filters .filters__item:after + .filter__item:hover {
-  position: absolute;
-  content: '';
-  width: 18px;
-  height: 11px;
-  background: url(../img/left-point-up.png) 0 0 no-repeat;
-}
 .filters .filters__item:first-child {
   border-top: 0;
   border-radius: 4px 4px 0 0;
@@ -86,15 +79,17 @@
 .filters__item .filters-item__head:hover.filters-item__head:after {
   position: absolute;
   content: '';
-  width: 18px;
-  height: 11px;
   top: 18px;
   right: 10px;
-  background: url(../img/left-point-down.png) 0 0 no-repeat;
+  background: url('../../img/other-sc12c5fa7f2.png') -77px 0 no-repeat;
+  height: 11px;
+  width: 18px;
 }
 
 .filters__item_active .filters-item__head:hover.filters-item__head:after {
-  background: url(../img/left-point-up.png) 0 0 no-repeat;
+  background: url('../../img/other-sc12c5fa7f2.png') -165px 0 no-repeat;
+  height: 11px;
+  width: 18px;
 }
 
 /* Radio Check */
@@ -283,7 +278,9 @@
   height: 14px;
   border: 0;
   border-radius: 0;
-  background: url("../img/slider-point.png") 0 0 repeat;
+  background: url('../../img/other-sc12c5fa7f2.png') -417px 0 no-repeat;
+  height: 14px;
+  width: 8px;
   outline: none;
 }
 

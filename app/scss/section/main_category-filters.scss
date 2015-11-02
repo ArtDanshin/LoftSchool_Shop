@@ -68,13 +68,7 @@
 		border: 0;
 		border-top: 1px #dee1e4 solid;
 	}
-	.filters__item:after + .filter__item:hover {
-		position: absolute;
-		content: '';
-		width: 18px;
-		height: 11px;
-		background: url(../img/left-point-up.png) 0 0 no-repeat;
-	}
+
 	.filters__item:first-child {
 		border-top: 0;
 		border-radius: 4px 4px 0 0;
@@ -97,17 +91,18 @@
 		display: block;
 	}
 }
+
+$otherIcon-map: sprite-map('other/*.png', $spacing: 70px, $layout: horizontal);
+
 .filters__item .filters-item__head:hover.filters-item__head:after {
 	position: absolute;
 	content: '';
-	width: 18px;
-	height: 11px;
 	top: 18px;
 	right: 10px;
-	background: url(../img/left-point-down.png) 0 0 no-repeat;
+	@include get-sprite($otherIcon-map, left-point-down);
 }
 .filters__item_active .filters-item__head:hover.filters-item__head:after {
-	background: url(../img/left-point-up.png) 0 0 no-repeat;
+	@include get-sprite($otherIcon-map, left-point-up);
 }
 /* Radio Check */
 
@@ -263,6 +258,9 @@
 	margin: 0 auto;
 	width: 280px;
 }
+
+$otherIcon-map: sprite-map('other/*.png', $spacing: 70px, $layout: horizontal);
+
 .ui-slider-horizontal {
 	height: 3px;
 	border: 0;
@@ -287,7 +285,7 @@
 	height: 14px;
 	border: 0;
 	border-radius: 0;
-	background: url("../img/slider-point.png") 0 0 repeat;
+	@include get-sprite($otherIcon-map, slider-point);
 	outline:none;
 }
 /* Color Check */

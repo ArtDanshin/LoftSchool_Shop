@@ -59,18 +59,19 @@
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
+	
+	$otherIcon-map: sprite-map('other/*.png', $spacing: 70px, $layout: horizontal);
+
 	.select2-container--default .select2-selection--single .select2-selection__arrow b {
 		border: 0;
-	    height: 9px;
-	    width: 13px;
-	    background: url(../img/sort-point.png) 0 0 no-repeat;
+	    @include get-sprite($otherIcon-map, sort-point);
 	    left: 50%;
 	    margin-left: -8px;
 	    margin-top: -3px;
 	    position: absolute;
 	}
 	.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
-		background: url(../img/sort-point-up.png) 0 0 no-repeat;
+	    @include get-sprite($otherIcon-map, sort-point-up);
 	}
 }
 .select2-results__option {

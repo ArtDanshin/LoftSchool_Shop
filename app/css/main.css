@@ -636,7 +636,7 @@ body {
 .map-point:after {
   content: '';
   position: absolute;
-  background: url('../img/other-s43ebcc9bef.png') -253px 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -253px 0 no-repeat;
   height: 16px;
   width: 12px;
   top: 3px;
@@ -661,7 +661,7 @@ body {
 .phone-point:after {
   content: '';
   position: absolute;
-  background: url('../img/other-s43ebcc9bef.png') -335px 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -335px 0 no-repeat;
   height: 16px;
   width: 12px;
   top: 4px;
@@ -899,13 +899,6 @@ body {
   border: 0;
   border-top: 1px #dee1e4 solid;
 }
-.filters .filters__item:after + .filter__item:hover {
-  position: absolute;
-  content: '';
-  width: 18px;
-  height: 11px;
-  background: url(../img/left-point-up.png) 0 0 no-repeat;
-}
 .filters .filters__item:first-child {
   border-top: 0;
   border-radius: 4px 4px 0 0;
@@ -931,15 +924,17 @@ body {
 .filters__item .filters-item__head:hover.filters-item__head:after {
   position: absolute;
   content: '';
-  width: 18px;
-  height: 11px;
   top: 18px;
   right: 10px;
-  background: url(../img/left-point-down.png) 0 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -77px 0 no-repeat;
+  height: 11px;
+  width: 18px;
 }
 
 .filters__item_active .filters-item__head:hover.filters-item__head:after {
-  background: url(../img/left-point-up.png) 0 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -165px 0 no-repeat;
+  height: 11px;
+  width: 18px;
 }
 
 /* Radio Check */
@@ -1128,7 +1123,9 @@ body {
   height: 14px;
   border: 0;
   border-radius: 0;
-  background: url("../img/slider-point.png") 0 0 repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -417px 0 no-repeat;
+  height: 14px;
+  width: 8px;
   outline: none;
 }
 
@@ -1229,16 +1226,18 @@ body {
 }
 .sort-block .select2-container--default .select2-selection--single .select2-selection__arrow b {
   border: 0;
+  background: url('../img/other-sc12c5fa7f2.png') -578px 0 no-repeat;
   height: 9px;
   width: 13px;
-  background: url(../img/sort-point.png) 0 0 no-repeat;
   left: 50%;
   margin-left: -8px;
   margin-top: -3px;
   position: absolute;
 }
 .sort-block .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
-  background: url(../img/sort-point-up.png) 0 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -495px 0 no-repeat;
+  height: 9px;
+  width: 13px;
 }
 
 .select2-results__option {
@@ -1291,47 +1290,47 @@ body {
   text-indent: -9999px;
 }
 .head-main-content__view .view-points__link_all {
-  background: url('../img/other-s43ebcc9bef.png') -763px 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -924px 0 no-repeat;
   height: 16px;
   width: 16px;
 }
 .head-main-content__view .view-points__link_all-current {
-  background: url('../img/other-s43ebcc9bef.png') -677px 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -838px 0 no-repeat;
   height: 16px;
   width: 16px;
 }
 .head-main-content__view .view-points__link_all:hover {
-  background: url('../img/other-s43ebcc9bef.png') -677px 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -838px 0 no-repeat;
   height: 16px;
   width: 16px;
 }
 .head-main-content__view .view-points__link_tab {
-  background: url('../img/other-s43ebcc9bef.png') -1107px 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -1268px 0 no-repeat;
   height: 16px;
   width: 16px;
 }
 .head-main-content__view .view-points__link_tab-current {
-  background: url('../img/other-s43ebcc9bef.png') -1021px 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -1182px 0 no-repeat;
   height: 16px;
   width: 16px;
 }
 .head-main-content__view .view-points__link_tab:hover {
-  background: url('../img/other-s43ebcc9bef.png') -1021px 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -1182px 0 no-repeat;
   height: 16px;
   width: 16px;
 }
 .head-main-content__view .view-points__link_list {
-  background: url('../img/other-s43ebcc9bef.png') -935px 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -1096px 0 no-repeat;
   height: 16px;
   width: 16px;
 }
 .head-main-content__view .view-points__link_list-current {
-  background: url('../img/other-s43ebcc9bef.png') -849px 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -1010px 0 no-repeat;
   height: 16px;
   width: 16px;
 }
 .head-main-content__view .view-points__link_list:hover {
-  background: url('../img/other-s43ebcc9bef.png') -849px 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -1010px 0 no-repeat;
   height: 16px;
   width: 16px;
 }
@@ -1496,7 +1495,7 @@ body {
   list-style: none;
   display: inline-block;
   text-indent: -9999px;
-  background: url('../img/other-s43ebcc9bef.png') -500px 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -661px 0 no-repeat;
   height: 15px;
   width: 16px;
 }
@@ -1504,7 +1503,7 @@ body {
   list-style: none;
   display: inline-block;
   text-indent: -9999px;
-  background: url('../img/other-s43ebcc9bef.png') -586px 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -747px 0 no-repeat;
   height: 20px;
   width: 21px;
 }
@@ -1560,7 +1559,7 @@ body {
 .products_all .product__wrap-price-shop .product__presence:after {
   content: '';
   position: absolute;
-  background: url('../img/other-s43ebcc9bef.png') 0 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') 0 0 no-repeat;
   height: 7px;
   width: 7px;
   top: 5px;
@@ -1742,7 +1741,7 @@ body {
   list-style: none;
   display: inline-block;
   text-indent: -9999px;
-  background: url('../img/other-s43ebcc9bef.png') -500px 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -661px 0 no-repeat;
   height: 15px;
   width: 16px;
 }
@@ -1750,7 +1749,7 @@ body {
   list-style: none;
   display: inline-block;
   text-indent: -9999px;
-  background: url('../img/other-s43ebcc9bef.png') -586px 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') -747px 0 no-repeat;
   height: 20px;
   width: 21px;
 }
@@ -1799,7 +1798,7 @@ body {
 .products_tab .product__wrap-price-shop .product__presence:after {
   content: '';
   position: absolute;
-  background: url('../img/other-s43ebcc9bef.png') 0 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') 0 0 no-repeat;
   height: 7px;
   width: 7px;
   top: 5px;
@@ -1946,7 +1945,7 @@ body {
 .products_list .product__wrap-price-shop .product__presence:after {
   content: '';
   position: absolute;
-  background: url('../img/other-s43ebcc9bef.png') 0 0 no-repeat;
+  background: url('../img/other-sc12c5fa7f2.png') 0 0 no-repeat;
   height: 7px;
   width: 7px;
   top: 5px;
