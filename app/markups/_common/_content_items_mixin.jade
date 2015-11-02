@@ -9,42 +9,44 @@ mixin shop-item(classItem,imgItem, articleItem, titleItems, textItem, typeSim, q
 						li(class=classItem + "-slide__img")
 							a(href="#" class=classItem + "-slide__link")
 								img(src="http://lorempixel.com/100/125/technics/" + j alt="Image " + titleItem + " " + j class=classItem + "-slide-img")
-				div(class=classItem + "__article")= "Артикул " +  articleItem[i]
-			div(class=classItem + '__wrap-info')
-				div(class=classItem + '__wrap-info_left')
-					h2(class=classItem + "__title")= titleItem
-					p(class=classItem + "__text")= textItem[i]
-					ul(class=classItem + "__charact")
-						li(class=classItem + "-charact__item")
-							div(class=classItem + "-charact-item__left") Тип SIM-карты
-							div(class=classItem + "-charact-item__rigth")= typeSim[i]
-						li(class=classItem + "-charact__item")
-							div(class=classItem + "-charact-item__left") Количество SIM-карт
-							div(class=classItem + "-charact-item__rigth")= quantSim[i]
-						li(class=classItem + "-charact__item")
-							div(class=classItem + "-charact-item__left") Цвет
-							div(class=classItem + "-charact-item__rigth")= colorItem[i]
-						li(class=classItem + "-charact__item")
-							div(class=classItem + "-charact-item__left") ОС
-							div(class=classItem + "-charact-item__rigth")= osItem[i]
-						li(class=classItem + "-charact__item")
-							div(class=classItem + "-charact-item__left") Связь 3G
-							div(class=classItem + "-charact-item__rigth")= tgItem[i]
-						li(class=classItem + "-charact__item")
-							div(class=classItem + "-charact-item__left") 4G (LTE)
-							div(class=classItem + "-charact-item__rigth")= chgItem[i]
-						li(class=classItem + "-charact__item")
-							div(class=classItem + "-charact-item__left") GPS-модуль
-							div(class=classItem + "-charact-item__rigth")= gpsItem[i]
-					div(class=classItem + "__rating")
-						ul(class=classItem + "-rating__stars")
-							- for (var k = 0; k < ratingItem[i]; k++) 
-								li(class=classItem + "-rating__stars_red") +
-							- for (var k = 0; k < 5-ratingItem[i]; k++)
-								li(class=classItem + "-rating__stars_white") -
-						div(class=classItem + "-rating__number")= ratingItem[i]
-				div(class=classItem + '__wrap-info_right')
-					div(class=classItem + "__wrap-price-shop")
-						div(class=classItem + "__price")= priceItem[i]
-						div(class=classItem + "__presence") В наличие
-						input(type="button" value="В корзину" class=classItem + "__shop-button")
+				div(class=classItem + "__article") Артикул 
+					span(class=classItem + "__article_number")= articleItem[i]
+			div(class=classItem + '__wrap-info clearfix')
+				span(class=classItem + "__type") Смартфон
+				h2(class=classItem + "__title")= titleItem
+				p(class=classItem + "__text")= textItem[i]
+				ul(class=classItem + "__charact")
+					li(class=classItem + "-charact__item")
+						div(class=classItem + "-charact-item__left") Тип SIM-карты
+						div(class=classItem + "-charact-item__rigth")= typeSim[i]
+					li(class=classItem + "-charact__item")
+						div(class=classItem + "-charact-item__left") Количество SIM-карт
+						div(class=classItem + "-charact-item__rigth")= quantSim[i]
+					li(class=classItem + "-charact__item")
+						div(class=classItem + "-charact-item__left") Цвет
+						div(class=classItem + "-charact-item__rigth")= colorItem[i]
+					li(class=classItem + "-charact__item")
+						div(class=classItem + "-charact-item__left") ОС
+						div(class=classItem + "-charact-item__rigth")= osItem[i]
+					li(class=classItem + "-charact__item")
+						div(class=classItem + "-charact-item__left") Связь 3G
+						div(class=classItem + "-charact-item__rigth")= tgItem[i]
+					li(class=classItem + "-charact__item")
+						div(class=classItem + "-charact-item__left") 4G (LTE)
+						div(class=classItem + "-charact-item__rigth")= chgItem[i]
+					li(class=classItem + "-charact__item")
+						div(class=classItem + "-charact-item__left") GPS-модуль
+						div(class=classItem + "-charact-item__rigth")= gpsItem[i]
+				div(class=classItem + "__rating")
+					ul(class=classItem + "-rating__stars")
+						- for (var k = 0; k < ratingItem[i]; k++) 
+							li(class=classItem + "-rating__stars_red") +
+						- for (var k = 0; k < 5-ratingItem[i]; k++)
+							li(class=classItem + "-rating__stars_white") -
+					div(class=classItem + "-rating__number")= ratingItem[i]
+			div(class=classItem + '__wrap-info_right clearfix')
+				div(class=classItem + "__wrap-price-shop")
+					div(class=classItem + "__price")= priceItem[i]
+						span(class=classItem + "__price_rouble") i
+					div(class=classItem + "__presence") В наличие
+					input(type="button" value="В корзину" class=classItem + "__shop-button")
