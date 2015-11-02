@@ -21,14 +21,13 @@
 }
 .sort-block {
 	float: left;
-	width: 300px;
-	margin: 9px 23px;
+	margin: 11px 23px;
 
 	.sort-block__text {
 		display: inline-block;
 		font-family: OpenSans_Regular;
 		font-size: 1.4em;
-		padding: 0px 8px 0px 0px;
+		margin-right: 8px;
 	}
 	.sort-block__select {
 		display: inline-block;
@@ -91,7 +90,6 @@
 }
 .head-main-content__view {
 	float: right;
-	width: 263px;
 
 	.view-block__text {
 		display: inline-block;
@@ -101,7 +99,6 @@
 	}
 	.view-points {
 		display: inline-block;
-		width: 155px;
 		height: 51px;
 		margin: 0;
 		padding: 0; 
