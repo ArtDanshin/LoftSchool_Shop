@@ -125,7 +125,8 @@ var loftShop = (function () {
 
 	var _textColumn = function () {
 		$('.info-page__text').columnize({
-			columns: 2
+			columns: 2,
+			width: 20
 		});
 
 	}
