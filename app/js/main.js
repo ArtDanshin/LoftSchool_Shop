@@ -28,8 +28,8 @@ var loftShop = (function () {
 		$( ".filter-price__slider" ).slider({
 			range: true,
 	 		min: 0,
-			max: 500,
-			values: [ 75, 300 ],
+			max: 10000,
+			values: [ 750, 5000 ],
 			slide: function( event, ui ) {
 				$( "#priceIn" ).val( ui.values[ 0 ]);
 				$( "#priceOut" ).val( ui.values[ 1 ]);
