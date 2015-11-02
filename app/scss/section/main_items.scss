@@ -135,11 +135,15 @@
 	.product__title {
 		font-family: OpenSans_SemiBold;
 		font-size: 1.6em;
+		width: 100%;
 		color: #010101;
 		padding: 0;
 		margin: 0;
 		margin-bottom: 20px; 
   		font-weight: normal; 
+  		white-space: nowrap;
+  		overflow: hidden;
+  		text-overflow: ellipsis;
 	}
 	.product__text {
 		font-family: OpenSans_Regular;
@@ -355,17 +359,29 @@
 	.product__article {
 		display: none;
 	}
+	.product__wrap-title {
+		height: 42px;
+		width: 200px;
+		margin: 0 auto;
+		position: relative;
+	}
 	.product__type {
 		display: none;
 	}
 	.product__title {
-		margin: 0 auto;
-		width: 150px;
+		position: absolute;
+		top: 0;
+		margin: auto;
+		width: 200px;
+		height: 42px;
 		font-family: OpenSans_SemiBold;
 		font-size: 1.4em;
+		line-height: 1.4em;
 		text-align: center;
-		margin-bottom: 3px; 
+		margin-bottom: 10px; 
   		font-weight: normal; 
+  		text-overflow: ellipsis;
+  		overflow: hidden;
 	}
 	.product__text {
 		display: none;
@@ -561,6 +577,7 @@
 		float: left;
 		width: 295px;
 		margin-bottom: 0;
+		overflow: hidden;
 	}
 	.product__type {
 		font-family: OpenSans_SemiBold;
@@ -570,6 +587,10 @@
 		margin: 0;
 		display: inline-block;
 	}
+	.product__wrap-title {
+  		white-space: nowrap;
+  		text-overflow: ellipsis;
+	}
 	.product__title {
 		font-family: OpenSans_SemiBold;
 		font-size: 1.4em;
@@ -577,7 +598,7 @@
 		padding: 0;
 		margin: 0;
 		display: inline-block;
-  		font-weight: normal; 
+  		font-weight: normal;
 	}
 	.product__text {
 		display: none;

@@ -12,8 +12,9 @@ mixin shop-item(classItem,imgItem, articleItem, titleItems, textItem, typeSim, q
 				div(class=classItem + "__article") Артикул 
 					span(class=classItem + "__article_number")= articleItem[i]
 			div(class=classItem + '__wrap-info clearfix')
-				span(class=classItem + "__type") Смартфон
-				h2(class=classItem + "__title")= titleItem
+				div(class=classItem + "__wrap-title")
+					span(class=classItem + "__type") Смартфон
+					h2(class=classItem + "__title")= titleItem
 				p(class=classItem + "__text")= textItem[i]
 				ul(class=classItem + "__charact")
 					li(class=classItem + "-charact__item")

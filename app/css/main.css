@@ -1448,11 +1448,15 @@ body {
 .products_all .product__title {
   font-family: OpenSans_SemiBold;
   font-size: 1.6em;
+  width: 100%;
   color: #010101;
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
   font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .products_all .product__text {
   font-family: OpenSans_Regular;
@@ -1653,17 +1657,29 @@ body {
 .products_tab .product__article {
   display: none;
 }
+.products_tab .product__wrap-title {
+  height: 42px;
+  width: 200px;
+  margin: 0 auto;
+  position: relative;
+}
 .products_tab .product__type {
   display: none;
 }
 .products_tab .product__title {
-  margin: 0 auto;
-  width: 150px;
+  position: absolute;
+  top: 0;
+  margin: auto;
+  width: 200px;
+  height: 42px;
   font-family: OpenSans_SemiBold;
   font-size: 1.4em;
+  line-height: 1.4em;
   text-align: center;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
   font-weight: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .products_tab .product__text {
   display: none;
@@ -1850,6 +1866,7 @@ body {
   float: left;
   width: 295px;
   margin-bottom: 0;
+  overflow: hidden;
 }
 .products_list .product__type {
   font-family: OpenSans_SemiBold;
@@ -1858,6 +1875,10 @@ body {
   padding: 0;
   margin: 0;
   display: inline-block;
+}
+.products_list .product__wrap-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .products_list .product__title {
   font-family: OpenSans_SemiBold;
