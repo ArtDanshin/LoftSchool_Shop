@@ -73,9 +73,14 @@
 	.menu-item__link {
 		font-family: OpenSans_SemiBold;
 		font-size: 1.6em;
-		color: #333333
+		color: #333333;
+		text-decoration: none;
+		padding-bottom: -2px; 
+		border-bottom: 1px #333333 solid;
 	}
 	.menu-item__link:hover {
-		color: #ff6600
+		color: #ff6600;
+		text-decoration: none;
+		border-bottom: 1px #ff6600 solid;
 	}
 }

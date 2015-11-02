@@ -38,6 +38,9 @@
   color: #7f7f7f;
   padding-left: 10px;
 }
+.sort-block .select2-selection.select2-selection--single {
+  outline: none;
+}
 .sort-block .select2-container .select2-selection--single .select2-selection__rendered {
   display: block;
   padding-left: 10px;
