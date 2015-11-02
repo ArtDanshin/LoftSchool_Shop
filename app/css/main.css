@@ -698,7 +698,6 @@ body {
 
 .low-header-left {
   float: left;
-  width: 238px;
   height: 38px;
   margin: 31px 0 26px 0;
 }
@@ -710,7 +709,6 @@ body {
 
 .low-header-right {
   float: right;
-  width: 807px;
 }
 
 .search-form {
@@ -718,7 +716,7 @@ body {
   position: relative;
   width: 368px;
   height: 34px;
-  margin: 31px 0 30px 0;
+  margin: 31px 50px 30px 0;
 }
 .search-form .search-form__input {
   position: absolute;
@@ -752,9 +750,8 @@ body {
 
 .menu-head {
   float: right;
-  width: 390px;
   padding: 0;
-  margin: 38px 0 34px 0;
+  margin: 36px 0 34px 0;
 }
 .menu-head .menu-head__item {
   display: inline-block;
@@ -781,7 +778,6 @@ body {
 /* ╨Э╨░╨▓╨╕╨│╨░╤Ж╨╕╤П ╨▓╨╡╤А╤Е╨╜╤П╤П */
 .navigation {
   background-color: #FFFFFF;
-  height: 52px;
   border-bottom: 2px #ebedef solid;
   margin-bottom: 28px;
 }
@@ -789,7 +785,6 @@ body {
 .navigation-head {
   margin: 0;
   padding: 0;
-  height: 52px;
   margin-left: 8px;
 }
 .navigation-head .navigation-head__item {
